@@ -1,0 +1,24 @@
+Ok, what should I do?
+For C# 6.0
+
+Copy CSharp60Support folder from this repository (or the downloads page) to your Unity project. It should be placed in the project's root, next to the Assets folder.
+
+Import CSharp60Support.unitypackage into your project. It's located inside CSharp60Support folder.
+
+Select Reimport All or just restart the editor, whatever is faster in your case.
+
+[Optional] On Windows, run /CSharp60Support/ngen install.cmd once with administrator privileges. It will precompile csc.exe, pdb2mdb.exe and mcs.exe using Ngen that will make compilation in Unity a bit faster.
+
+For C# 7.0 preview
+
+On MacOS download and install Mono 4.6+. On Windows download and install .Net Framework 4.6.2+.
+
+Copy CSharp70Support folder from this repository (or the downloads page) to your Unity project. It should be placed in the project's root, next to the Assets folder.
+
+Import CSharp70Support.unitypackage into your project. It's located inside CSharp70Support folder.
+
+Select Reimport All or just restart the editor, whatever is faster in your case.
+
+[Optional] On Windows, run /CSharp70Support/ngen install.cmd once with administrator privileges. It will precompile csc.exe, pdb2mdb.exe and mcs.exe using Ngen that will make compilation in Unity a bit faster.
+
+Thus, the project folder is the only folder that changes. All the other projects will work as usual.

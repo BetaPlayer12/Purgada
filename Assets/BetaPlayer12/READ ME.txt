@@ -1,0 +1,3 @@
+This folder contains files that
+Ayan Summ Castillano created outside the
+project but decided to import it in the project

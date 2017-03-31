@@ -1,0 +1,2 @@
+This folder contains files 
+that are exclusive to the project
