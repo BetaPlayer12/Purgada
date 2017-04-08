@@ -1,5 +1,5 @@
 ********************************************************************************
-*                     Thursday, March 23, 2017 10:13:04 PM                     *
+*                     Saturday, April 08, 2017 10:23:34 PM                     *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -12,16 +12,19 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-1020145325368c640ac3bdb32de3be3e 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-326def75aa483be4da867b1482903d48 
 Exit code: 0
-Elapsed time: 2.67 sec
+Elapsed time: 2.53 sec
 
 - Compiler output (0 lines):
 
-- Compiler errors (3 lines):
-0: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
-1: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
-2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+- Compiler errors (6 lines):
+0: Assets\Zoten0110\Global\GameManager.cs(8,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(12,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
 
 - PDB to MDB conversion --------------------------------------
 
@@ -32,7 +35,7 @@ Elapsed time: 0.12 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                     Thursday, March 23, 2017 10:13:11 PM                     *
+*                     Saturday, April 08, 2017 10:23:37 PM                     *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -45,9 +48,244 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Xml.dll" @Temp/UnityTempFile-f4c22d95ec38b56419202b100e2a1704 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Xml.dll" @Temp/UnityTempFile-0e2180827b73823459ea9293b59041df 
 Exit code: 0
-Elapsed time: 2.40 sec
+Elapsed time: 2.54 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 08, 2017 10:24:02 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-3e712dc853bef8e4781a1b64c001f556 
+Exit code: 0
+Elapsed time: 2.48 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (6 lines):
+0: Assets\Zoten0110\Global\GameManager.cs(8,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(12,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 08, 2017 10:24:05 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Xml.dll" @Temp/UnityTempFile-8b592c48a37b4b347820a28bcf764040 
+Exit code: 0
+Elapsed time: 2.43 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 08, 2017 10:24:33 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-62046ffd79772914c8b71014cdb1ab87 
+Exit code: 0
+Elapsed time: 2.66 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (6 lines):
+0: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(12,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Global\GameManager.cs(8,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 08, 2017 10:24:38 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Xml.dll" @Temp/UnityTempFile-c5b9c23b9da66214596c6bd624da8c60 
+Exit code: 0
+Elapsed time: 2.68 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 08, 2017 10:25:16 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-firstpass.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-0711ffd3de263e542a0e9a9f479d85bd 
+Exit code: 0
+Elapsed time: 2.92 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs(28,43): warning CS0618: 'ParticleSystem.startLifetime' is obsolete: 'startLifetime property is deprecated. Use main.startLifetime or main.startLifetimeMultiplier instead.'
+1: Assets\Standard Assets\Utility\WaypointProgressTracker.cs(14,50): warning CS0649: Field 'WaypointProgressTracker.circuit' is never assigned to, and will always have its default value null
+2: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(24,39): warning CS0649: Field 'PlatformSpecificContent.m_ChildrenOfThisObject' is never assigned to, and will always have its default value false
+3: Assets\Standard Assets\Utility\SmoothFollow.cs(21,17): warning CS0649: Field 'SmoothFollow.heightDamping' is never assigned to, and will always have its default value 0
+4: Assets\Standard Assets\Utility\SmoothFollow.cs(10,21): warning CS0649: Field 'SmoothFollow.target' is never assigned to, and will always have its default value null
+5: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(21,51): warning CS0649: Field 'PlatformSpecificContent.m_BuildTargetGroup' is never assigned to, and will always have its default value
+6: Assets\Standard Assets\Utility\SmoothFollow.cs(19,17): warning CS0649: Field 'SmoothFollow.rotationDamping' is never assigned to, and will always have its default value 0
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-firstpass.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 08, 2017 10:25:21 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-5d491174464ab8240983ac4f764d163b 
+Exit code: 0
+Elapsed time: 2.57 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (6 lines):
+0: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+1: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(12,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Global\GameManager.cs(8,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 08, 2017 10:25:24 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Xml.dll" @Temp/UnityTempFile-92dbc5f80a8195247b1c1ee5d9af79d8 
+Exit code: 0
+Elapsed time: 2.71 sec
 
 - Compiler output (0 lines):
 

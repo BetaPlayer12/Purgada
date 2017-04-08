@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameEvent { }
+public class GameEvent
+{
+    public GameObject sender;
+}
 
 public class GameEventMessenger : MonoBehaviour {
 
