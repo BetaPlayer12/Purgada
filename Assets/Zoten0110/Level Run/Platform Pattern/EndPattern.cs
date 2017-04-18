@@ -1,23 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndPattern : MonoBehaviour
 {
-    private float m_screenWidth;
-
+    private RectTransform m_parent;
+    private float m_referenceResolutionX;
+    private float m_offset;
+    private float m_relativeXPosition;
 
     void Start()
     {
-        m_screenWidth = Screen.width;
+        m_parent = transform.parent.GetComponent<RectTransform>(); ;
+        m_referenceResolutionX = GetComponentInParent<CanvasScaler>().referenceResolution.x;
+        m_offset = GetComponent<RectTransform>().localPosition.x;
     }
 
     void Update()
     {
-        if (transform.localPosition.x <= -m_screenWidth)
+        m_relativeXPosition = m_parent.localPosition.x + m_offset;
+
+        if (m_relativeXPosition <= -m_referenceResolutionX)
         {
-            this.RaiseEventGlobal<CreatePlatformEvent>(new CreatePlatformEvent { sender = gameObject });
-            Destroy(gameObject);
+            Destroy(m_parent.gameObject);
         }
     }
 }
