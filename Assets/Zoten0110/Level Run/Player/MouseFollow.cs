@@ -5,26 +5,14 @@ using UnityEngine;
 public class MouseFollow : MonoBehaviour
 {
     public Vector2 m_offset;
-
-    private RectTransform m_rectTransform;
-    private Camera m_mainCamera;
-
-    void Start()
-    {
-        m_rectTransform = transform.parent.GetComponent<RectTransform>();
-        m_mainCamera = Camera.main;
-    }
-
+    public float m_angleOffset;
     // Update is called once per frame
     void Update()
     {
-        var mousPosition = Input.mousePosition;
-
-        // Get Angle in Radians
-        float AngleRad = Mathf.Atan2(mousPosition.y - m_rectTransform.localPosition.y + m_offset.y, mousPosition.x - m_rectTransform.localPosition.x + m_offset.x);
-        // Get Angle in Degrees
-        float AngleDeg = (180 / Mathf.PI) * AngleRad;
-        // Rotate Object
-        this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+        var mouse = Input.mousePosition;
+        var screenPoint = Camera.main.WorldToScreenPoint(transform.position);
+        var offset = new Vector2(mouse.x - screenPoint.x + m_offset.x, mouse.y - screenPoint.y + m_offset.y);
+        var angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle + m_angleOffset);
     }
 }

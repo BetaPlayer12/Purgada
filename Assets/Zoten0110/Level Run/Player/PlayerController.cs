@@ -29,7 +29,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //Input Checks
         {
             if (jumpInput && !m_isJumping)

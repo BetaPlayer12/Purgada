@@ -6,14 +6,4 @@ using UnityEngine;
 /// Contains Behavioour for Tools
 /// </summary>
 public class ToolController : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
