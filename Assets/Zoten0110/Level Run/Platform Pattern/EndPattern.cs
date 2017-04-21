@@ -5,25 +5,20 @@ using UnityEngine.UI;
 
 public class EndPattern : MonoBehaviour
 {
-    private RectTransform m_parent;
     private float m_referenceResolutionX;
-    private float m_offset;
-    private float m_relativeXPosition;
 
     void Start()
     {
-        m_parent = transform.parent.GetComponent<RectTransform>(); ;
-        m_referenceResolutionX = GetComponentInParent<CanvasScaler>().referenceResolution.x;
-        m_offset = GetComponent<RectTransform>().localPosition.x;
+        m_referenceResolutionX = 0;
     }
 
     void Update()
     {
-        m_relativeXPosition = m_parent.localPosition.x + m_offset;
+        var screenPosition = Camera.main.WorldToScreenPoint(transform.position);
 
-        if (m_relativeXPosition <= -m_referenceResolutionX)
+        if (screenPosition.x <= -m_referenceResolutionX)
         {
-            Destroy(m_parent.gameObject);
+            Destroy(transform.parent.gameObject);
         }
     }
 }

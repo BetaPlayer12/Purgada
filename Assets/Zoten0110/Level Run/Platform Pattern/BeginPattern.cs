@@ -10,15 +10,16 @@ public class BeginPattern : MonoBehaviour
 
     void Start()
     {
-        m_referenceResolutionX = GetComponentInParent<CanvasScaler>().referenceResolution.x;
+        m_referenceResolutionX = 0;
         m_hasRaisedEvent = false;
     }
 
     void Update()
     {
-        if (transform.localPosition.x <= -m_referenceResolutionX && !m_hasRaisedEvent)
+        var screenPosition = Camera.main.WorldToScreenPoint(transform.position);
+        if (screenPosition.x <= m_referenceResolutionX && !m_hasRaisedEvent)
         {
-            this.RaiseEventGlobal<CreatePlatformEvent>(new CreatePlatformEvent { sender = gameObject });
+            this.RaiseEventGlobal(new CreatePlatformEvent(gameObject));
             m_hasRaisedEvent = true;
         }
     }

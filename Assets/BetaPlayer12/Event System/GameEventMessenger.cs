@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class GameEvent
 {
+    public GameEvent(GameObject senderObj)
+    {
+        sender = senderObj;
+    }
+
     public GameObject sender;
 }
 

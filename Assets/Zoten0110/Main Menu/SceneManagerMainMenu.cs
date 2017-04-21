@@ -15,6 +15,9 @@ public class SceneManagerMainMenu : MonoBehaviour
     [SerializeField]
     private BackgroundSelectWindow m_backgroundSelect;
 
+
+    private Animator m_animator;
+
     public void OnButtonShop()
     {
         var shopGO = m_shop.gameObject;
@@ -29,12 +32,29 @@ public class SceneManagerMainMenu : MonoBehaviour
         ActivateHiddenPanel(backgroundSelectGO.activeInHierarchy);
     }
 
+    public void SetActive(bool value)
+    {
+        gameObject.SetActive(value);
+    }
+
+    public void ToLevelRun()
+    {
+        m_animator.SetBool("Level Run", true);
+    }
+
     private void ActivateHiddenPanel(bool value)
     {
         m_hiddenPanel.SetActive(value);
     }
 
+
+    void Awake()
+    {
+        m_animator = GetComponent<Animator>();
+    }
+
     void Start()
     {
+        Time.timeScale = 1;
     }
 }

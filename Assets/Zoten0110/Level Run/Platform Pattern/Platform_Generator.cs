@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CreatePlatformEvent : GameEvent
 {
+    public CreatePlatformEvent(GameObject senderObj) : base(senderObj)
+    {
+        sender = senderObj;
+    }
 }
 
 public class Platform_Generator : MonoBehaviour {
@@ -20,6 +24,8 @@ public class Platform_Generator : MonoBehaviour {
         var instanceTransform = instance.transform;
         instanceTransform.localPosition = Vector3.zero;
         instanceTransform.localScale = Vector3.one * m_spawnScale;
+
+        instance.GetComponent<ConstantMovement>().Move();
     }
 
     private void OnCreatePlatformEvent(CreatePlatformEvent e)
@@ -29,7 +35,7 @@ public class Platform_Generator : MonoBehaviour {
 
     void Start()
     {
-        CreatePlatform();
+        //CreatePlatform();
     }
 
     void OnEnable()
