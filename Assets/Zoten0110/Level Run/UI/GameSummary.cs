@@ -18,6 +18,7 @@ public class GameSummary : MonoBehaviour {
     {
         SceneManager.LoadScene("Test");
     }
+
     void OnEnable()
     {
         this.AddEventListenerGlobal<PlayerDeathEvent>(OnPlayerDeathEvent);

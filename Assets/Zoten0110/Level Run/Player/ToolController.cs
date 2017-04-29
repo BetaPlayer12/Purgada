@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
 /// Contains Behavioour for Tools
 /// </summary>
-public class ToolController : MonoBehaviour {
+public class ToolController : MonoBehaviour, DebugObject {
 
     public delegate void ShootFunc();
     public ShootFunc Shoot;
@@ -65,4 +66,8 @@ public class ToolController : MonoBehaviour {
         this.RemoveEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
     }
 
+    void DebugObject.OnDebug()
+    {
+        m_enableInput = true;
+    }
 }

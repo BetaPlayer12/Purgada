@@ -64,10 +64,4 @@ public class Trash_Generator : MonoBehaviour
             m_colliders.Add(collider);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

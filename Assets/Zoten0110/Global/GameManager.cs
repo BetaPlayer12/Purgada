@@ -6,7 +6,13 @@ using UnityEngine;
 [System.Serializable]
 public class GlobalGameSettings
 {
+    [SerializeField]
+    private float m_trashMissDamage;
+    [SerializeField]
+    private float m_disposeFailDamage;
 
+    public float trashMissDamage { get { return m_trashMissDamage; } }
+    public float disposeFailDamage { get { return m_disposeFailDamage; } }
 }
 
 public class GameManager : Singleton<GameManager>
@@ -17,6 +23,8 @@ public class GameManager : Singleton<GameManager>
     [Header("Global Game Settings")]
     [SerializeField]
     private GlobalGameSettings m_globalGameSettings;
+
+    public GlobalGameSettings globalGameSettings { get { return m_globalGameSettings; } }
 
     public T GetSystem<T>(string name = "") where T : ISystem
     {

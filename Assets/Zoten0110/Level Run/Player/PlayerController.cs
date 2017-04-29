@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,7 @@ using UnityEngine;
 /// <summary>
 /// Contains all the controls for the player object
 /// </summary>
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, DebugObject
 {
 
     private Rigidbody2D m_rigidbody;
@@ -26,6 +27,8 @@ public class PlayerController : MonoBehaviour
     private bool dropInput { get {
             Debug.Log(Input.GetAxis("Drop"));
             return Input.GetAxis("Drop") != 0; } }
+
+
 
     // Use this for initialization
     void Start()
@@ -85,5 +88,10 @@ public class PlayerController : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         m_legCollider.isTrigger = false;
+    }
+
+    void DebugObject.OnDebug()
+    {
+        m_enableInput = true;
     }
 }
