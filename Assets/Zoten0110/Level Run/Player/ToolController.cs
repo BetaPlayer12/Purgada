@@ -21,6 +21,7 @@ public class ToolController : MonoBehaviour {
 
     private void SwapTool()
     {
+
         if (isSwapingTool)
         {
             m_toolIndex += (int)Input.GetAxis("Swap Tool");

@@ -27,6 +27,9 @@ public class EntryNotFoundException : Exception {
 /// </summary>
 public abstract class IDatabase : ScriptableObject {
 
+    [SerializeField]
+    private string m_name;
+
     [System.Serializable]
     public class IEntry
     {
@@ -139,6 +142,9 @@ public abstract class IDatabase : ScriptableObject {
         var index = GetIndex(instanceID);
         return entries[index];
     }
+
+    public bool IsName(string name) =>
+        m_name == name;
 
     private string CompressString(string m_string)
     {

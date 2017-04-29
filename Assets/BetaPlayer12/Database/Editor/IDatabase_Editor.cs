@@ -24,6 +24,7 @@ public abstract class IDatabase_Editor : Editor {
     protected int m_editIndex;
 
     protected SerializedProperty m_entriesProp = null;
+    private SerializedProperty m_databaseNameProp = null;
     private SerializedProperty m_overrideIDProp = null;
     private SerializedProperty m_overrideNameProp = null;
 
@@ -38,6 +39,7 @@ public abstract class IDatabase_Editor : Editor {
         m_serializedObject = serializedObject;
         m_viewingType = ViewingType.All;
 
+        m_databaseNameProp = m_serializedObject.FindProperty("m_name");
         m_overrideIDProp = m_serializedObject.FindProperty("m_overrideID");
         m_overrideNameProp = m_serializedObject.FindProperty("m_overrideName");
 
@@ -65,6 +67,7 @@ public abstract class IDatabase_Editor : Editor {
         EditorGUIExt.ScriptAndAssetPropertyFields(serializedObject);
 
         {
+            EditorGUILayout.PropertyField(m_databaseNameProp);
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("All"))
             {
@@ -305,13 +308,9 @@ public abstract class IDatabase_Editor : Editor {
         return false;
     }
 
-//<<<<<<< HEAD
-        //return false;
-//=======
     protected virtual void FoldoutNameDisplay(int index, SerializedProperty entryProp,SerializedProperty entryNameProp, SerializedProperty entryIDProp)
     {
         m_entryFoldouts[index] = EditorGUILayout.Foldout(m_entryFoldouts[index], entryNameProp.stringValue + " (ID: " + entryIDProp.intValue + " )");
-//>>>>>>> d9691833ef733b3c125237353d1eb7d172db847d
     }
 
     protected void DisplayTexture(string label, SerializedProperty entryProp, bool usePrefabImage = false)
@@ -330,9 +329,6 @@ public abstract class IDatabase_Editor : Editor {
 
         }
     }
-
-
-
 
     protected abstract void OnLoadModule();
 

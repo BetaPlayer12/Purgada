@@ -1,5 +1,5 @@
 ********************************************************************************
-*                      Friday, April 21, 2017 5:18:19 PM                       *
+*                     Saturday, April 29, 2017 12:44:26 PM                     *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -12,99 +12,30 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-b91a8f654a8bfd84a80be12c3a4f1627 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-2cfeac01db7cc3944a0a8b4bb5626bf6 
 Exit code: 0
-Elapsed time: 2.59 sec
+Elapsed time: 2.61 sec
 
 - Compiler output (0 lines):
 
-- Compiler errors (13 lines):
-0: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
-1: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
-2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
-3: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
 4: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
-5: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
-6: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
-7: Assets\Zoten0110\Global\GameManager.cs(8,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
-8: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
-9: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
-10: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
-11: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
-12: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
-
-- PDB to MDB conversion --------------------------------------
-
-Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
-Arguments: Temp\Assembly-CSharp.dll
-Exit code: 0
-Elapsed time: 0.12 sec
-
-- pdb2mdb.exe output (0 lines):
-********************************************************************************
-*                      Friday, April 21, 2017 5:18:23 PM                       *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 2.0.3.30
-Platform: Windows
-Target assembly: Assembly-CSharp-Editor.dll
-Project directory: C:\Users\ayansumm\Documents\Purgada
-Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
-Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
-Compiler: Microsoft C# 6.0
-
-- Compilation -----------------------------------------------
-
-Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-31cb163b5fae7e64cad12f9dac7aa024 
-Exit code: 0
-Elapsed time: 2.47 sec
-
-- Compiler output (0 lines):
-
-- Compiler errors (0 lines):
-
-- PDB to MDB conversion --------------------------------------
-
-Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
-Arguments: Temp\Assembly-CSharp-Editor.dll
-Exit code: 0
-Elapsed time: 0.11 sec
-
-- pdb2mdb.exe output (0 lines):
-********************************************************************************
-*                      Friday, April 21, 2017 5:18:49 PM                       *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 2.0.3.30
-Platform: Windows
-Target assembly: Assembly-CSharp.dll
-Project directory: C:\Users\ayansumm\Documents\Purgada
-Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
-Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
-Compiler: Microsoft C# 6.0
-
-- Compilation -----------------------------------------------
-
-Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-7e3ff315ba673844d908a7a3416eadf8 
-Exit code: 0
-Elapsed time: 2.53 sec
-
-- Compiler output (0 lines):
-
-- Compiler errors (13 lines):
-0: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
-1: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
-2: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
-3: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
-4: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
-5: Assets\Zoten0110\Global\GameManager.cs(8,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
-6: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
-7: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
-8: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
-9: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
-10: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
-11: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
-12: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+7: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+13: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+14: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
 
 - PDB to MDB conversion --------------------------------------
 
@@ -115,7 +46,7 @@ Elapsed time: 0.13 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Friday, April 21, 2017 5:18:52 PM                       *
+*                     Saturday, April 29, 2017 12:44:30 PM                     *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -128,9 +59,478 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-1bf440e68d263a84d9d457ba325c144a 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-812efcb5ccd4ef444a09e67d67df49f9 
 Exit code: 0
-Elapsed time: 2.46 sec
+Elapsed time: 2.27 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:44:38 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-2dba8e3ead1946546ad4a4a34b065c06 
+Exit code: 0
+Elapsed time: 2.52 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+11: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+13: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+14: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:44:41 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-firstpass.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-b9e0557fa3b7b0e408078ff1b9d9ff23 
+Exit code: 0
+Elapsed time: 2.53 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs(28,43): warning CS0618: 'ParticleSystem.startLifetime' is obsolete: 'startLifetime property is deprecated. Use main.startLifetime or main.startLifetimeMultiplier instead.'
+1: Assets\Standard Assets\Utility\SmoothFollow.cs(21,17): warning CS0649: Field 'SmoothFollow.heightDamping' is never assigned to, and will always have its default value 0
+2: Assets\Standard Assets\Utility\SmoothFollow.cs(10,21): warning CS0649: Field 'SmoothFollow.target' is never assigned to, and will always have its default value null
+3: Assets\Standard Assets\Utility\WaypointProgressTracker.cs(14,50): warning CS0649: Field 'WaypointProgressTracker.circuit' is never assigned to, and will always have its default value null
+4: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(21,51): warning CS0649: Field 'PlatformSpecificContent.m_BuildTargetGroup' is never assigned to, and will always have its default value
+5: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(24,39): warning CS0649: Field 'PlatformSpecificContent.m_ChildrenOfThisObject' is never assigned to, and will always have its default value false
+6: Assets\Standard Assets\Utility\SmoothFollow.cs(19,17): warning CS0649: Field 'SmoothFollow.rotationDamping' is never assigned to, and will always have its default value 0
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-firstpass.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:44:44 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-9bbd94cbf72f6c64f9ee9b9da94ac468 
+Exit code: 0
+Elapsed time: 2.53 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+3: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+10: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+12: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+13: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:44:47 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-2c9c1e45c014c204bbeee1a6cfc42fe8 
+Exit code: 0
+Elapsed time: 2.34 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:45:19 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-4195001fbd1afd54bbd31c7dfb477fb0 
+Exit code: 0
+Elapsed time: 2.49 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+3: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+6: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+13: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:45:22 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-ef875237796a2f94ab1f2ef17ecc909a 
+Exit code: 0
+Elapsed time: 2.31 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:45:29 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-726f1da434e75e644939b78d64185d08 
+Exit code: 0
+Elapsed time: 2.59 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+1: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+6: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+9: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+14: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:45:32 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-c0c19aa8588b9c146baa9f1dcd52b6db 
+Exit code: 0
+Elapsed time: 2.32 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:48:40 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-ff0b41d8ad422b944ae512199132d2db 
+Exit code: 0
+Elapsed time: 2.56 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+2: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+5: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+8: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+10: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:48:43 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-72a21b1e89d28714c8411a42501cc291 
+Exit code: 0
+Elapsed time: 2.32 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:51:05 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-65e37d5626afa3b46b127daeefcabf0a 
+Exit code: 0
+Elapsed time: 2.69 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+6: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+7: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+8: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+12: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:51:08 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-d4892fa863e060b4d930074fdd903498 
+Exit code: 0
+Elapsed time: 2.37 sec
 
 - Compiler output (0 lines):
 
@@ -145,7 +545,7 @@ Elapsed time: 0.12 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Friday, April 21, 2017 5:19:43 PM                       *
+*                     Saturday, April 29, 2017 12:55:57 PM                     *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -158,37 +558,41 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-efebdfbbadb0af1409aaf8e2b1e8e332 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-3cce9540b405b364383a57e3d20dd9fe 
 Exit code: 0
-Elapsed time: 2.61 sec
+Elapsed time: 2.69 sec
 
 - Compiler output (0 lines):
 
-- Compiler errors (13 lines):
-0: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
-1: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
-2: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
-3: Assets\Zoten0110\Global\GameManager.cs(8,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
-4: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
-5: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
-6: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
-7: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
-8: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
-9: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
-10: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
-11: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
-12: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+2: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+5: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+10: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
 
 - PDB to MDB conversion --------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
 Arguments: Temp\Assembly-CSharp.dll
 Exit code: 0
-Elapsed time: 0.11 sec
+Elapsed time: 0.12 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Friday, April 21, 2017 5:19:47 PM                       *
+*                     Saturday, April 29, 2017 12:56:01 PM                     *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -201,9 +605,200 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-808c810c95ce8084294d3a7131fecbc1 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-74f402d7380d25b4c96db642bb826043 
 Exit code: 0
-Elapsed time: 2.49 sec
+Elapsed time: 2.43 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:56:37 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-125f97c64c0c5ba4c8b5b683462ffe79 
+Exit code: 0
+Elapsed time: 2.55 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+4: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+8: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+9: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+14: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:56:41 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-b6169458225aa7a4aa27c7e3755bcd0b 
+Exit code: 0
+Elapsed time: 2.33 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:59:16 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-firstpass.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-d897f31ae16a2474f90faa63ced138cc 
+Exit code: 0
+Elapsed time: 2.65 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs(28,43): warning CS0618: 'ParticleSystem.startLifetime' is obsolete: 'startLifetime property is deprecated. Use main.startLifetime or main.startLifetimeMultiplier instead.'
+1: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(21,51): warning CS0649: Field 'PlatformSpecificContent.m_BuildTargetGroup' is never assigned to, and will always have its default value
+2: Assets\Standard Assets\Utility\SmoothFollow.cs(19,17): warning CS0649: Field 'SmoothFollow.rotationDamping' is never assigned to, and will always have its default value 0
+3: Assets\Standard Assets\Utility\SmoothFollow.cs(21,17): warning CS0649: Field 'SmoothFollow.heightDamping' is never assigned to, and will always have its default value 0
+4: Assets\Standard Assets\Utility\SmoothFollow.cs(10,21): warning CS0649: Field 'SmoothFollow.target' is never assigned to, and will always have its default value null
+5: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(24,39): warning CS0649: Field 'PlatformSpecificContent.m_ChildrenOfThisObject' is never assigned to, and will always have its default value false
+6: Assets\Standard Assets\Utility\WaypointProgressTracker.cs(14,50): warning CS0649: Field 'WaypointProgressTracker.circuit' is never assigned to, and will always have its default value null
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-firstpass.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:59:19 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-a8b4182fc15ae3d47badaa3662a9f719 
+Exit code: 0
+Elapsed time: 2.57 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (17 lines):
+0: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Level Run\Player\PlayerController.cs(14,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+6: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+7: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Level Run\Player\ToolController.cs(14,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Global\GameManager.cs(16,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Level Run\Player\PlayerController.cs(18,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+13: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+16: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                     Saturday, April 29, 2017 12:59:23 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-748e755d37ee0ae4d91c1c12ac8178af 
+Exit code: 0
+Elapsed time: 2.35 sec
 
 - Compiler output (0 lines):
 
