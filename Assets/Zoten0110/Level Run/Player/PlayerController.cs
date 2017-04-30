@@ -23,10 +23,9 @@ public class PlayerController : MonoBehaviour, DebugObject
 
     private bool m_enableInput;
 
-    private bool jumpInput { get { return Input.GetKeyDown("space"); } }
+    private bool jumpInput { get { return CustomInput.Instance.isTapped(CustomInputType.MonoInput,"Jump"); } }
     private bool dropInput { get {
-            Debug.Log(Input.GetAxis("Drop"));
-            return Input.GetAxis("Drop") != 0; } }
+            return CustomInput.Instance.isExecuted("Drop"); } }
 
 
 

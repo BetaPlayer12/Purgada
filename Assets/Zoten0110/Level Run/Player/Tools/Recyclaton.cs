@@ -5,18 +5,47 @@ using UnityEngine;
 
 public class Recyclaton : Tool {
 
-    public override void Shoot()
+    [SerializeField]
+    private PointEffector2D m_range;
+    [SerializeField]
+    private float m_maxForce;
+    [SerializeField]
+    private float m_speed;
+
+    private bool m_activated;
+
+    public override void Activate()
     {
-        Debug.Log("Recyclaton Shot");
+        m_activated = true;
+    }
+	
+    void Start()
+    {
+        m_range.forceMagnitude =  0;
     }
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        if (m_activated)
+        {
+            m_range.forceMagnitude -= m_speed * Time.deltaTime;
+
+            if(m_range.forceMagnitude < -m_maxForce)
+            {
+                m_range.forceMagnitude = -m_maxForce;
+            }
+        }
+        else
+        {
+            m_range.forceMagnitude +=  m_speed * Time.deltaTime;
+
+            if (m_range.forceMagnitude > 0)
+            {
+                m_range.forceMagnitude = 0;
+            }
+        }
+        m_activated = false;
+
+    }
 }

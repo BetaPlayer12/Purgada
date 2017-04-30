@@ -8,8 +8,11 @@ using UnityEngine;
 /// </summary>
 public class ToolController : MonoBehaviour, DebugObject {
 
+    public delegate bool AllClearFunc();
     public delegate void ShootFunc();
+    public AllClearFunc AllClear;
     public ShootFunc Shoot;
+
 
     [SerializeField]
     private Tool[] m_tools;
@@ -17,15 +20,14 @@ public class ToolController : MonoBehaviour, DebugObject {
 
     private bool m_enableInput;
 
-    private bool isShooting { get { return Input.GetAxis("Shoot") > 0; } }
-    private bool isSwapingTool { get { return Input.GetAxis("Swap Tool") != 0; } }
+    private bool isShooting { get { return CustomInput.Instance.isHeld(CustomInputType.MonoInput,"Shoot"); } }
+    private bool isSwapingTool { get { return CustomInput.Instance.isTapped(CustomInputType.BinaryInput, "Swap Tools"); } }
 
     private void SwapTool()
     {
-
-        if (isSwapingTool)
+        if (AllClear() && isSwapingTool)
         {
-            m_toolIndex += (int)Input.GetAxis("Swap Tool");
+            m_toolIndex += CustomInput.Instance.GetTapValue(CustomInputType.BinaryInput,"Swap Tools");
             m_toolIndex = m_toolIndex.RotateIndex(0, m_tools.Length);
             m_tools[m_toolIndex].Select();
         }
@@ -38,7 +40,7 @@ public class ToolController : MonoBehaviour, DebugObject {
 
     void Start()
     {
-        Shoot = m_tools[m_toolIndex].Shoot;
+        m_tools[m_toolIndex].Select();
     }
 
     void OnEnable()

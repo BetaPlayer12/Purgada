@@ -6,17 +6,29 @@ public abstract class Tool : MonoBehaviour
 {
 
     private ToolController m_toolController;
-
     private bool m_isJammed;
+    protected bool m_lockInput;
 
+    private bool AllClear()=>
+       !m_lockInput;
+    
 
-    public abstract void Shoot();
+    public void Shoot()
+    {
+        if (m_isJammed || m_lockInput)
+            return;
+
+        Activate();
+    }
+
+    public abstract void Activate();
 
     private void OverrideShoot()
     {
+        Debug.Log(GetType().ToString() + " is Selected");
         m_toolController.Shoot = Shoot;
+        m_toolController.AllClear = AllClear;
     }
-
 
     public void Select()
     {
@@ -28,4 +40,5 @@ public abstract class Tool : MonoBehaviour
     {
         m_toolController = GetComponentInParent<ToolController>();
     }
+
 }
