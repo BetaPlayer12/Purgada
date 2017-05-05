@@ -23,17 +23,15 @@ public class Trash : MonoBehaviour {
     private Rigidbody2D m_rigidBody;
     [SerializeField]
     private Sprite m_sprite;
+    [SerializeField]
     private Type m_trashType;
+
+    public Type trashType { get { return m_trashType; } }
 
     public void SetInfo(Sprite newSprite, Type type)
     {
         m_sprite = newSprite;
         m_trashType = type;
-    }
-
-    void Start()
-    {
-        m_rigidBody.simulated = false;
     }
 
 	// Update is called once per frame
@@ -44,15 +42,5 @@ public class Trash : MonoBehaviour {
             this.RaiseEventGlobal(new TrashMissedEvent(gameObject));
             Destroy(gameObject);
         }
-    }
-
-    void OnTriggerStay2D(Collider2D other)
-    {
-        m_rigidBody.simulated = true;
-    }
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-       // m_rigidBody.simulated = false;
     }
 }

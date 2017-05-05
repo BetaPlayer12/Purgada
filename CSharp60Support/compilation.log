@@ -1,5 +1,5 @@
 ********************************************************************************
-*                      Sunday, April 30, 2017 2:53:47 PM                       *
+*                       Friday, May 05, 2017 10:44:07 PM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -12,67 +12,68 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-9e808a3b3072e4c479f9de39b3c35c35 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-027987938b73cb841a9fa61282205c1c 
 Exit code: 0
-Elapsed time: 2.80 sec
+Elapsed time: 3.04 sec
 
 - Compiler output (0 lines):
 
-- Compiler errors (43 lines):
-0: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
 1: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
-2: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
 3: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
-4: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
-5: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
-6: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
-7: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+6: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+7: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
 8: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
-9: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
-10: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
-11: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
-12: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
-13: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
-14: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
-15: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
-16: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
-17: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
-18: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
-19: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
-20: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
-21: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
-22: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
-23: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
-24: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
-25: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
-26: Assets\Zoten0110\Level Run\Trash\Trash.cs(23,25): warning CS0649: Field 'Trash.m_rigidBody' is never assigned to, and will always have its default value null
-27: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,23): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
-28: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
-29: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
-30: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
-31: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
-32: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
-33: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
-34: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
-35: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
-36: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
-37: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
-38: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
-39: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
-40: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
-41: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+9: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+14: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+16: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+18: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+19: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+20: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+21: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+22: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+24: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+25: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+26: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+27: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+28: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+29: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+30: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+31: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+33: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+35: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+36: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+37: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+38: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+39: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+41: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
 42: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+43: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
 
 - PDB to MDB conversion --------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
 Arguments: Temp\Assembly-CSharp.dll
 Exit code: 0
-Elapsed time: 0.13 sec
+Elapsed time: 0.14 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Sunday, April 30, 2017 2:53:50 PM                       *
+*                       Friday, May 05, 2017 10:44:10 PM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -85,9 +86,113 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-dea3b11ef25b9ef499219b7c3bc5facd 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-2b7b83bdb8aea3d438993ead88cca94b 
 Exit code: 0
-Elapsed time: 2.52 sec
+Elapsed time: 2.74 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:48:20 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-c96f26904671d6642bd745c189464d03 
+Exit code: 0
+Elapsed time: 2.94 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+1: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+3: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+4: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+6: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+8: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+10: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+15: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+16: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+18: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+19: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+20: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+21: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+22: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+24: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+25: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+26: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+27: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+28: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+29: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+30: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+31: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+35: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+36: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+37: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+38: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+39: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+40: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+41: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+42: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+43: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.21 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:48:24 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-a4acce40d0456364788cc42cf816a2fc 
+Exit code: 0
+Elapsed time: 2.55 sec
 
 - Compiler output (0 lines):
 
@@ -102,7 +207,7 @@ Elapsed time: 0.11 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Sunday, April 30, 2017 2:54:58 PM                       *
+*                       Friday, May 05, 2017 10:49:51 PM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -115,67 +220,68 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-a68d795cd907e1a4da5aabdf2e8b81dd 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-674c7a10e187a7f41bad26c13202797a 
 Exit code: 0
-Elapsed time: 2.87 sec
+Elapsed time: 2.98 sec
 
 - Compiler output (0 lines):
 
-- Compiler errors (43 lines):
-0: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
-1: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
-2: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
-3: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
-4: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
-5: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
-6: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
-7: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
-8: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
-9: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
-10: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
-11: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
-12: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
-13: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
-14: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
-15: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
-16: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
-17: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
-18: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
-19: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
-20: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
-21: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
-22: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
-23: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
-24: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
-25: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
-26: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
-27: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
-28: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
-29: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
-30: Assets\Zoten0110\Level Run\Trash\Trash.cs(23,25): warning CS0649: Field 'Trash.m_rigidBody' is never assigned to, and will always have its default value null
-31: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
-32: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
-33: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
-34: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
-35: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
-36: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,23): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
-37: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
-38: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
-39: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
-40: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
-41: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
-42: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+3: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+4: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+7: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+16: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+18: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+19: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+20: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+21: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+22: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+24: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+25: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+26: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+27: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+28: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+29: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+30: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+31: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+32: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+35: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+36: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+37: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+38: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+39: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+40: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+41: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+42: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+43: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
 
 - PDB to MDB conversion --------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
 Arguments: Temp\Assembly-CSharp.dll
 Exit code: 0
-Elapsed time: 0.12 sec
+Elapsed time: 0.16 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Sunday, April 30, 2017 2:55:02 PM                       *
+*                       Friday, May 05, 2017 10:49:54 PM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -188,7 +294,393 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-00180aaac23c88747a929e60ad98b2bf 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-6991adc4018bef24a8a714b6d84beb65 
+Exit code: 0
+Elapsed time: 2.53 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:50:12 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-firstpass.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-40b0f35cbe00d2c4591bb11d9c4201d2 
+Exit code: 0
+Elapsed time: 3.02 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs(28,43): warning CS0618: 'ParticleSystem.startLifetime' is obsolete: 'startLifetime property is deprecated. Use main.startLifetime or main.startLifetimeMultiplier instead.'
+1: Assets\Standard Assets\Utility\SmoothFollow.cs(21,17): warning CS0649: Field 'SmoothFollow.heightDamping' is never assigned to, and will always have its default value 0
+2: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(21,51): warning CS0649: Field 'PlatformSpecificContent.m_BuildTargetGroup' is never assigned to, and will always have its default value
+3: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(24,39): warning CS0649: Field 'PlatformSpecificContent.m_ChildrenOfThisObject' is never assigned to, and will always have its default value false
+4: Assets\Standard Assets\Utility\SmoothFollow.cs(10,21): warning CS0649: Field 'SmoothFollow.target' is never assigned to, and will always have its default value null
+5: Assets\Standard Assets\Utility\WaypointProgressTracker.cs(14,50): warning CS0649: Field 'WaypointProgressTracker.circuit' is never assigned to, and will always have its default value null
+6: Assets\Standard Assets\Utility\SmoothFollow.cs(19,17): warning CS0649: Field 'SmoothFollow.rotationDamping' is never assigned to, and will always have its default value 0
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-firstpass.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:50:18 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-ab966abf2d6c411428237f7ed87f5fb6 
+Exit code: 0
+Elapsed time: 2.97 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+6: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+8: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+11: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+14: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+16: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+18: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+19: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+20: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+21: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+22: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+24: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+25: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+26: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+27: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+28: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+29: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+30: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+31: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+34: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+35: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+36: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+37: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+38: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+39: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+41: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+42: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+43: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:50:21 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-ebb3549750e49924085ee5cf135bafde 
+Exit code: 0
+Elapsed time: 2.56 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:50:47 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-a228c098e1b08434bb8f217a822f0a88 
+Exit code: 0
+Elapsed time: 3.04 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+2: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+7: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+9: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+10: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+13: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+16: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+18: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+19: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+20: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+21: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+22: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+23: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+24: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+25: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+26: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+27: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+28: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+29: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+30: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+31: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+35: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+36: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+37: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+38: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+39: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+41: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+42: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+43: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.15 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:50:51 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-e4a07e9befcf91f41a038479afabcc8d 
+Exit code: 0
+Elapsed time: 2.82 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:52:40 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-firstpass.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-1af42672fd6a28c489f6139fa9f8fd06 
+Exit code: 0
+Elapsed time: 2.98 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs(28,43): warning CS0618: 'ParticleSystem.startLifetime' is obsolete: 'startLifetime property is deprecated. Use main.startLifetime or main.startLifetimeMultiplier instead.'
+1: Assets\Standard Assets\Utility\WaypointProgressTracker.cs(14,50): warning CS0649: Field 'WaypointProgressTracker.circuit' is never assigned to, and will always have its default value null
+2: Assets\Standard Assets\Utility\SmoothFollow.cs(19,17): warning CS0649: Field 'SmoothFollow.rotationDamping' is never assigned to, and will always have its default value 0
+3: Assets\Standard Assets\Utility\SmoothFollow.cs(21,17): warning CS0649: Field 'SmoothFollow.heightDamping' is never assigned to, and will always have its default value 0
+4: Assets\Standard Assets\Utility\SmoothFollow.cs(10,21): warning CS0649: Field 'SmoothFollow.target' is never assigned to, and will always have its default value null
+5: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(24,39): warning CS0649: Field 'PlatformSpecificContent.m_ChildrenOfThisObject' is never assigned to, and will always have its default value false
+6: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(21,51): warning CS0649: Field 'PlatformSpecificContent.m_BuildTargetGroup' is never assigned to, and will always have its default value
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-firstpass.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:52:44 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-8dc2208a7a4bd6e42b858f6516a7f66c 
+Exit code: 0
+Elapsed time: 2.91 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+5: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+8: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+10: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+11: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+16: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+18: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+19: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+20: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+21: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+22: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+24: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+25: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+26: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+27: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+28: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+29: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+30: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+31: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+35: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+36: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+37: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+38: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+39: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+41: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+42: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+43: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:52:47 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-33f1b65509545f349b47525d722e109c 
 Exit code: 0
 Elapsed time: 2.53 sec
 
@@ -205,7 +697,7 @@ Elapsed time: 0.11 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Sunday, April 30, 2017 2:58:15 PM                       *
+*                       Friday, May 05, 2017 10:52:57 PM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -218,56 +710,57 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-7bcb46512eb36dc45a449c8910ca5c6a 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-41112f385f71d954ba6a891214675d11 
 Exit code: 0
-Elapsed time: 2.82 sec
+Elapsed time: 2.96 sec
 
 - Compiler output (0 lines):
 
-- Compiler errors (43 lines):
-0: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
 1: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
-2: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
-3: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
-4: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
-5: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
-6: Assets\Zoten0110\Level Run\Trash\Trash.cs(23,25): warning CS0649: Field 'Trash.m_rigidBody' is never assigned to, and will always have its default value null
-7: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
-8: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
-9: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
-10: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
-11: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,23): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
-12: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
-13: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
-14: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
-15: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
-16: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
-17: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
-18: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
-19: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
-20: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
-21: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
-22: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
-23: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
-24: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
-25: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
-26: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+7: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+12: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+16: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+17: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+18: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+19: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+20: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+21: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+22: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+24: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+25: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+26: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
 27: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
-28: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
-29: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
-30: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
-31: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
-32: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
-33: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
-34: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
-35: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
-36: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
-37: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
-38: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
-39: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
-40: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
-41: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
-42: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+28: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+29: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+30: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+31: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+32: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+35: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+36: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+37: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+38: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+39: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+41: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+42: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+43: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
 
 - PDB to MDB conversion --------------------------------------
 
@@ -278,7 +771,7 @@ Elapsed time: 0.13 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Sunday, April 30, 2017 2:58:19 PM                       *
+*                       Friday, May 05, 2017 10:53:01 PM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
@@ -291,9 +784,486 @@ Compiler: Microsoft C# 6.0
 - Compilation -----------------------------------------------
 
 Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-74d671c71c5c718479b6a8b853e64c17 
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-fed89196edc86a6418e99b4d6bfda90d 
 Exit code: 0
-Elapsed time: 2.50 sec
+Elapsed time: 2.71 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:57:48 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-38f8ded7f3e358e4797a4e911d03022d 
+Exit code: 1
+Elapsed time: 0.76 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (1 line):
+0: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton_Opening.cs(9,1): error CS1519: Invalid token '}' in class, struct, or interface member declaration
+********************************************************************************
+*                       Friday, May 05, 2017 10:57:51 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-firstpass.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-fb4d6ebf5c52aa84a8b26f10bebceabb 
+Exit code: 0
+Elapsed time: 3.07 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs(28,43): warning CS0618: 'ParticleSystem.startLifetime' is obsolete: 'startLifetime property is deprecated. Use main.startLifetime or main.startLifetimeMultiplier instead.'
+1: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(21,51): warning CS0649: Field 'PlatformSpecificContent.m_BuildTargetGroup' is never assigned to, and will always have its default value
+2: Assets\Standard Assets\Utility\SmoothFollow.cs(21,17): warning CS0649: Field 'SmoothFollow.heightDamping' is never assigned to, and will always have its default value 0
+3: Assets\Standard Assets\Utility\PlatformSpecificContent.cs(24,39): warning CS0649: Field 'PlatformSpecificContent.m_ChildrenOfThisObject' is never assigned to, and will always have its default value false
+4: Assets\Standard Assets\Utility\WaypointProgressTracker.cs(14,50): warning CS0649: Field 'WaypointProgressTracker.circuit' is never assigned to, and will always have its default value null
+5: Assets\Standard Assets\Utility\SmoothFollow.cs(19,17): warning CS0649: Field 'SmoothFollow.rotationDamping' is never assigned to, and will always have its default value 0
+6: Assets\Standard Assets\Utility\SmoothFollow.cs(10,21): warning CS0649: Field 'SmoothFollow.target' is never assigned to, and will always have its default value null
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-firstpass.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:57:55 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-5efe0ca3d67822d439961d827bbfc33a 
+Exit code: 0
+Elapsed time: 3.04 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+4: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+6: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+7: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+10: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+12: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+13: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+14: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+15: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+16: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+17: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+18: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+19: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+20: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+21: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+22: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+24: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+25: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+26: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+27: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+28: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+29: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+30: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+31: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+35: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+36: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+37: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+38: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+39: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+41: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+42: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+43: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 10:57:58 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-d3b5d4af44c3ff140bda918f74e83452 
+Exit code: 0
+Elapsed time: 2.72 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 11:00:49 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-8c264b3b16c5364439ec835948c9aeb3 
+Exit code: 0
+Elapsed time: 2.88 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (45 lines):
+0: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+2: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+6: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+7: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+10: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(14,24): warning CS0649: Field 'Recyclaton.m_collider' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+15: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+16: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+18: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+19: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+20: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+21: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+22: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+24: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+25: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+26: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+27: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+28: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+29: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+30: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+31: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+34: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+35: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+36: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+37: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+38: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+39: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+41: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+42: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+43: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+44: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 11:00:53 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-167de8d6606d3a04d81da1a340836619 
+Exit code: 0
+Elapsed time: 2.63 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.12 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 11:01:09 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-c0dd6bba494e1ef4bb89cff7a51de57f 
+Exit code: 0
+Elapsed time: 3.00 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (45 lines):
+0: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+3: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+5: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+6: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+8: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+9: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+10: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+11: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+13: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+14: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+16: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+18: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+19: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+20: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+21: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+22: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+23: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+24: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+25: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+26: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+27: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+28: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+29: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+30: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+31: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+33: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+35: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+36: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+37: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+38: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(14,24): warning CS0649: Field 'Recyclaton.m_collider' is never assigned to, and will always have its default value null
+39: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+41: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+42: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+43: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+44: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 11:01:13 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-ec19f9acff2f1954ba064bcccbd3449c 
+Exit code: 0
+Elapsed time: 2.60 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.11 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 11:02:58 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-a98c771e8ee6d164d963607f83e76fe8 
+Exit code: 0
+Elapsed time: 2.95 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (44 lines):
+0: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(9,24): warning CS0649: Field 'SoilCannon.m_projectile' is never assigned to, and will always have its default value null
+1: Assets\Zoten0110\Global\CustomInput.cs(197,34): warning CS0649: Field 'CustomInput.MultiInput.m_executionKey' is never assigned to, and will always have its default value null
+2: Assets\Zoten0110\Global\CustomInput.cs(121,34): warning CS0649: Field 'CustomInput.MonoInput.m_key' is never assigned to, and will always have its default value null
+3: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(14,24): warning CS0649: Field 'SceneManagerMainMenu.m_shop' is never assigned to, and will always have its default value null
+4: Assets\Zoten0110\Level Run\Player\PlayerController.cs(19,19): warning CS0649: Field 'PlayerController.m_jumpForce' is never assigned to, and will always have its default value 0
+5: Assets\Zoten0110\Global\Cursor.cs(9,27): warning CS0649: Field 'Cursor.m_jitterScript' is never assigned to, and will always have its default value null
+6: Assets\Zoten0110\Global\CustomInput.cs(147,34): warning CS0649: Field 'CustomInput.BinaryInput.m_positive' is never assigned to, and will always have its default value null
+7: Assets\Zoten0110\Global\GameManager.cs(22,23): warning CS0649: Field 'GameManager.m_systemList' is never assigned to, and will always have its default value null
+8: Assets\Zoten0110\Global\GameManager.cs(10,19): warning CS0649: Field 'GlobalGameSettings.m_trashMissDamage' is never assigned to, and will always have its default value 0
+9: Assets\Zoten0110\Level Run\Player\PlayerController.cs(15,24): warning CS0649: Field 'PlayerController.m_legCollider' is never assigned to, and will always have its default value null
+10: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(15,19): warning CS0649: Field 'SoilCannon.m_force' is never assigned to, and will always have its default value 0
+11: Assets\Zoten0110\Global\Level Stream\LevelConstructor.cs(74,31): warning CS0649: Field 'LevelConstructor.m_platformQueue' is never assigned to, and will always have its default value null
+12: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(16,19): warning CS0649: Field 'PlayerHealth.m_maxHealth' is never assigned to, and will always have its default value 0
+13: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(18,19): warning CS0649: Field 'Grabber.m_maxRange' is never assigned to, and will always have its default value 0
+14: Assets\Zoten0110\Global\Database\DatabaseSystem.cs(10,25): warning CS0649: Field 'DatabaseSystem.m_databaseLibrary' is never assigned to, and will always have its default value null
+15: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(12,24): warning CS0649: Field 'SceneManagerMainMenu.m_hiddenPanel' is never assigned to, and will always have its default value null
+16: Assets\Zoten0110\Global\CustomInput.cs(20,26): warning CS0649: Field 'CustomInput.InputComponent.m_inputName' is never assigned to, and will always have its default value null
+17: Assets\Zoten0110\Level Run\Player\Tools\PlayerTool.cs(11,20): warning CS0649: Field 'PlayerTool.m_tools' is never assigned to, and will always have its default value null
+18: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(25,19): warning CS0649: Field 'Grabber.m_jammedTime' is never assigned to, and will always have its default value 0
+19: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(11,23): warning CS0649: Field 'SoilCannon.m_barrelEnd' is never assigned to, and will always have its default value null
+20: Assets\Zoten0110\Global\GameManager.cs(12,19): warning CS0649: Field 'GlobalGameSettings.m_disposeFailDamage' is never assigned to, and will always have its default value 0
+21: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(13,19): warning CS0649: Field 'Recyclaton.m_speed' is never assigned to, and will always have its default value 0
+22: Assets\Zoten0110\Main Menu\SceneManagerMainMenu.cs(16,36): warning CS0649: Field 'SceneManagerMainMenu.m_backgroundSelect' is never assigned to, and will always have its default value null
+23: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(11,19): warning CS0649: Field 'Recyclaton.m_maxForce' is never assigned to, and will always have its default value 0
+24: Assets\Zoten0110\Global\Cursor_Jitter.cs(9,21): warning CS0649: Field 'Cursor_Jitter.m_jitterRange' is never assigned to, and will always have its default value
+25: Assets\Zoten0110\Utilities\SpriteStabilizer.cs(14,21): warning CS0649: Field 'SpriteStabilizer.m_screenReference' is never assigned to, and will always have its default value
+26: Assets\Zoten0110\Global\GameManager.cs(25,32): warning CS0649: Field 'GameManager.m_globalGameSettings' is never assigned to, and will always have its default value null
+27: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(20,19): warning CS0649: Field 'Grabber.m_speed' is never assigned to, and will always have its default value 0
+28: Assets\Zoten0110\Level Run\UI\GameSummary.cs(9,24): warning CS0649: Field 'GameSummary.m_window' is never assigned to, and will always have its default value null
+29: Assets\Zoten0110\Global\CustomInput.cs(199,36): warning CS0649: Field 'CustomInput.MultiInput.m_HoldKeys' is never assigned to, and will always have its default value null
+30: Assets\Zoten0110\Level Run\Player\Tools\Recyclaton.cs(9,29): warning CS0649: Field 'Recyclaton.m_range' is never assigned to, and will always have its default value null
+31: Assets\Zoten0110\Level Run\Player\Tools\Grabber_ClawArm.cs(8,21): warning CS0649: Field 'Grabber_ClawArm.m_grabber' is never assigned to, and will always have its default value null
+32: Assets\Zoten0110\Global\CustomInput.cs(32,24): warning CS0649: Field 'CustomInput.InputInterpreter.m_input' is never assigned to, and will always have its default value null
+33: Assets\BetaPlayer12\Database\ItemDatabase.cs(13,28): warning CS0649: Field 'ItemDatabase.Entry.m_item' is never assigned to, and will always have its default value null
+34: Assets\Zoten0110\Level Run\Player\ToolController.cs(18,20): warning CS0649: Field 'ToolController.m_tools' is never assigned to, and will always have its default value null
+35: Assets\Zoten0110\Global\CustomInput.cs(149,34): warning CS0649: Field 'CustomInput.BinaryInput.m_negative' is never assigned to, and will always have its default value null
+36: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(16,23): warning CS0649: Field 'Platform_Generator.m_parent' is never assigned to, and will always have its default value null
+37: Assets\Zoten0110\Global\Cursor_Jitter.cs(11,19): warning CS0649: Field 'Cursor_Jitter.m_speed' is never assigned to, and will always have its default value 0
+38: Assets\Zoten0110\Level Run\Player\Tools\SoilCannon.cs(13,19): warning CS0649: Field 'SoilCannon.m_fireRate' is never assigned to, and will always have its default value 0
+39: Assets\Zoten0110\Level Run\Platform Pattern\Platform_Generator.cs(18,24): warning CS0649: Field 'Platform_Generator.m_platform' is never assigned to, and will always have its default value null
+40: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(16,29): warning CS0649: Field 'Grabber.m_clawArm' is never assigned to, and will always have its default value null
+41: Assets\Zoten0110\Level Run\Player\PlayerHealth.cs(21,18): warning CS0414: The field 'PlayerHealth.m_dead' is assigned but its value is never used
+42: Assets\Zoten0110\Level Run\Player\Tools\Grabber.cs(23,18): warning CS0414: The field 'Grabber.m_isJammed' is assigned but its value is never used
+43: Assets\BetaPlayer12\Database\ItemDatabase.cs(31,24): warning CS0414: The field 'ItemDatabase.m_overrideItem' is assigned but its value is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.13 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                       Friday, May 05, 2017 11:03:01 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\ayansumm\Documents\Purgada
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\ayansumm\Documents\Purgada\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-252c56dae55800d4eb1dde38fdf4b2c4 
+Exit code: 0
+Elapsed time: 2.70 sec
 
 - Compiler output (0 lines):
 

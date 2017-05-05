@@ -27,6 +27,11 @@ public class ToolController : MonoBehaviour, DebugObject {
     {
         if (AllClear() && isSwapingTool)
         {
+            for (int i = 0; i < m_tools.Length; i++)
+            {
+                m_tools[m_toolIndex].Unselect();
+            }
+
             m_toolIndex += CustomInput.Instance.GetTapValue(CustomInputType.BinaryInput,"Swap Tools");
             m_toolIndex = m_toolIndex.RotateIndex(0, m_tools.Length);
             m_tools[m_toolIndex].Select();

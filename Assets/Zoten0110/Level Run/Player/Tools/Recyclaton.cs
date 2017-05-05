@@ -11,8 +11,29 @@ public class Recyclaton : Tool {
     private float m_maxForce;
     [SerializeField]
     private float m_speed;
+    private Collider2D m_collider;
 
     private bool m_activated;
+
+    protected void OnSuccesfulDisposal()
+    {
+        Debug.Log("Recyclaton Disposed Trash");
+    }
+
+    protected void OnFailedDisposal()
+    {
+        Debug.Log("Recyclaton Fails");
+    }
+
+    protected override void OnSelect()
+    {
+        m_collider.enabled = true;
+    }
+
+    public override void Unselect()
+    {
+        m_collider.enabled = false;
+    }
 
     public override void Activate()
     {
@@ -22,6 +43,7 @@ public class Recyclaton : Tool {
     void Start()
     {
         m_range.forceMagnitude =  0;
+        m_collider = GetComponent<Collider2D>();
     }
 
 	// Update is called once per frame
@@ -46,6 +68,22 @@ public class Recyclaton : Tool {
             }
         }
         m_activated = false;
+    }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        var trash = other.gameObject.GetComponentInParent<Trash>();
+        if (trash)
+        {
+            if(trash.trashType == Trash.Type.Recyclable)
+            {
+                OnSuccesfulDisposal();
+            }
+            else
+            {
+                OnFailedDisposal();
+            }
+            Destroy(trash.gameObject);
+        }
     }
 }

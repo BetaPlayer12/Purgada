@@ -6,16 +6,16 @@ public abstract class Tool : MonoBehaviour
 {
 
     private ToolController m_toolController;
-    private bool m_isJammed;
+   
     protected bool m_lockInput;
+
 
     private bool AllClear()=>
        !m_lockInput;
-    
 
     public void Shoot()
     {
-        if (m_isJammed || m_lockInput)
+        if (m_lockInput)
             return;
 
         Activate();
@@ -33,7 +33,11 @@ public abstract class Tool : MonoBehaviour
     public void Select()
     {
         OverrideShoot();
+        OnSelect();
     }
+
+    protected abstract void OnSelect();
+    public abstract void Unselect();
 
     // Use this for initialization
     void Awake()

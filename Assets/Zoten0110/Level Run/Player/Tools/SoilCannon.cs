@@ -24,8 +24,18 @@ public class SoilCannon : Tool {
 
     private void CreateProjectile()
     {
-        var projectile = Instantiate(m_projectile, m_barrelEnd.position, transform.parent.rotation);
+        var projectile = Instantiate(m_projectile, m_barrelEnd.position, transform.parent.rotation) as GameObject;
         projectile.GetComponent<Rigidbody2D>().AddForce(projectile.transform.right * m_force, ForceMode2D.Impulse);
+    }
+
+    protected override void OnSelect()
+    {
+
+    }
+
+    public override void Unselect()
+    {
+
     }
 
     public override void Activate()
@@ -41,4 +51,6 @@ public class SoilCannon : Tool {
         m_timeInterval = 1f/ m_fireRate;
     }
 	
+
+
 }
