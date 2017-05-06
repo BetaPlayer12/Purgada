@@ -78,7 +78,7 @@ public class LevelConstructor : MonoBehaviour
     public GameObject GetPlatform()
     {
         var index = 0;
-        m_platformQueue.Enqueue(m_databaseSystem.GetEntry<ItemDatabase.Entry>(index, "Platform").item);
+        m_platformQueue.Enqueue(m_databaseSystem.GetEntryOf<ItemDatabase.ItemEntry>(index).item);
         return m_platformQueue.Dequeue();
     }
 

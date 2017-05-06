@@ -72,21 +72,17 @@ public class Grabber : Tool {
         StartCoroutine(JamCountDown());
     }
 
-    protected override void OnSelect()
+    public void Extend()
     {
+        m_toolState = State.Extend;
         m_clawArm.Enable(true);
     }
 
-    public override void Unselect()
+    public void Retract()
     {
+        m_toolState = State.Retract;
         m_clawArm.Enable(false);
     }
-
-    public void Extend()=>
-        m_toolState = State.Extend;
-
-    public void Retract() =>
-        m_toolState = State.Retract;
 
     public override void Activate()
     {
@@ -101,6 +97,7 @@ public class Grabber : Tool {
     void Start()
     {
         m_clawArmTransform = m_clawArm.transform;
+        m_clawArm.Enable(false);
         m_toolState = State.Standby;
     }
 

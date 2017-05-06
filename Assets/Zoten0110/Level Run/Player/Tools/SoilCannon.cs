@@ -28,16 +28,6 @@ public class SoilCannon : Tool {
         projectile.GetComponent<Rigidbody2D>().AddForce(projectile.transform.right * m_force, ForceMode2D.Impulse);
     }
 
-    protected override void OnSelect()
-    {
-
-    }
-
-    public override void Unselect()
-    {
-
-    }
-
     public override void Activate()
     {
         Debug.Log("SoilCannon Shot");

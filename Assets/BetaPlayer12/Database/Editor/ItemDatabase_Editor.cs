@@ -7,27 +7,11 @@ using UnityEngine;
 [CustomEditor(typeof(ItemDatabase))]
 public class ItemDatabase_Editor : IDatabase_Editor
 {
-    protected int m_assigendID;
-
     private SerializedProperty m_overrideItemProp = null;
-
-    protected override int autoAssignedID
-    {
-        get
-        {
-            return m_assigendID;
-        }
-
-        set
-        {
-            m_assigendID = value;
-        }
-    }
 
     protected override void DisplayAdditionalFoldoutDetails(SerializedProperty entryProp)
     {
-        var entryItemProp = entryProp.FindPropertyRelative("m_item");
-        DisplayTexture("Item", entryItemProp, true);
+        DisplayTexture("Item: ", m_overrideItemProp, true);
     }
 
     protected override void DisplayEditableFoldout()
@@ -37,8 +21,6 @@ public class ItemDatabase_Editor : IDatabase_Editor
 
     protected override void OnLoadModule()
     {
-        Debug.Log(m_serializedObject.FindProperty("m_itemDatabase"));
-        m_entriesProp = m_serializedObject.FindProperty("m_itemDatabase");
         m_overrideItemProp = m_serializedObject.FindProperty("m_overrideItem");
     }
 

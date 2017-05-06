@@ -33,11 +33,7 @@ public abstract class Tool : MonoBehaviour
     public void Select()
     {
         OverrideShoot();
-        OnSelect();
     }
-
-    protected abstract void OnSelect();
-    public abstract void Unselect();
 
     // Use this for initialization
     void Awake()

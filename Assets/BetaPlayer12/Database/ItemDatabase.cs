@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemDatabase : IDatabase
+public class ItemDatabase : IDatabase<ItemDatabase.ItemEntry>
 {
 
+
     [System.Serializable]
-    public class Entry : IEntry
+    public class ItemEntry : IDatabaseEntry
     {
         [SerializeField]
         private GameObject m_item;
@@ -16,32 +17,28 @@ public class ItemDatabase : IDatabase
     }
 
     [SerializeField]
-    private List<Entry> m_itemDatabase = new List<Entry>();
+    private List<ItemEntry> m_entries;
 
-    public override List<IEntry> entries
+    public override List<ItemEntry> entries
     {
         get
         {
-            return m_itemDatabase.ConvertAll((x) => (IEntry)x);
+            return m_entries;
         }
     }
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR 
     [SerializeField]
     private GameObject m_overrideItem;
 
-    public override void Clear()
-    {
-        m_itemDatabase = new List<Entry>();
-    }
-
-    protected override void AdditionalReset()
+    public override void ResetOverrides()
     {
         m_overrideItem = null;
     }
+
+    public override void Clear()
+    {
+        m_entries = new List<ItemEntry>();
+    }
 #endif
-
-    public GameObject GetItem(int id) =>
-        ((Entry)GetIEntry(id)).item;
-
 }

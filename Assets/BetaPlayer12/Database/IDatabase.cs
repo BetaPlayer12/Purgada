@@ -6,7 +6,8 @@ using System;
 /// <summary>
 /// Exception thrown when the entry is not found
 /// </summary>
-public class EntryNotFoundException : Exception {
+public class EntryNotFoundException : Exception
+{
     public EntryNotFoundException()
     {
     }
@@ -22,49 +23,63 @@ public class EntryNotFoundException : Exception {
     }
 }
 
+[System.Serializable]
+public class IDatabaseEntry
+{
+    [SerializeField]
+    protected int m_ID;
+    [SerializeField]
+    protected string m_name;
+
+    public int ID { get { return m_ID; } }
+    public string name { get { return m_name; } }
+}
+
+public interface IBaseDatabase
+{
+    int Count { get; }
+    IDatabaseEntry this[int i] { get; }
+    IDatabaseEntry GetIEntry(int ID);
+    IDatabaseEntry GetIEntry(string name);
+    void Clear();
+    void ResetOverrides();
+    bool IsDatabase(string databaseName);
+    bool IsInDatabase(string name, int i = -1);
+    void SortID();
+    void SortName();
+};
+
 /// <summary>
 /// Base Class for Database
 /// </summary>
-public abstract class IDatabase : ScriptableObject {
+public abstract class IDatabase<ListEntryT> : ScriptableObject, IBaseDatabase where ListEntryT
+: IDatabaseEntry
+{
+
+
+    private enum OrderType
+    {
+        None,
+        ID,
+        Name,
+    }
 
     [SerializeField]
-    private string m_name;
+    private string m_databaseName = "";
+    private OrderType m_orderedBy = OrderType.None;
 
-    [System.Serializable]
-    public class IEntry
-    {
-        [SerializeField][Tooltip("ID of the Entry")]
-        protected int m_iD;
-        [SerializeField][Tooltip("Name of the Entry")]
-        protected string m_name;
-
-        public int iD { get { return m_iD; } }
-        public string name { get { return m_name; } }
-    }
-
-    public abstract List<IEntry> entries { get; }
+    public virtual List<ListEntryT> entries { get { return null; } }
     public int Count { get { return entries.Count; } }
-    public IEntry this[int i] { get { return entries[i]; } }
+    
 
 #if UNITY_EDITOR //Only accessible by the editor
-    public int m_overrideID;
-    public string m_overrideName;
+    public IDatabaseEntry this[int i] { get { return entries[i]; } }
 
-    public void ResetOverride(int ID)
-    {
-        m_overrideID = ID;
-        m_overrideName = "";
-        AdditionalReset();
-    }
+    public abstract void ResetOverrides();
 
-    /// <summary>
-    /// Addition code for Resetting used by child classes
-    /// </summary>
-    protected abstract void AdditionalReset();
+    public virtual void Clear() { }
 
-    public abstract void Clear();
-
-    public bool isInDatabase(string name, int i = -1)
+    public bool IsInDatabase(string name, int i = -1)
     {
         if (i == -1)
         {
@@ -87,12 +102,38 @@ public abstract class IDatabase : ScriptableObject {
     }
 #endif
 
-    public void SortID() { entries.Sort((x, y) => (x.iD.CompareTo(y.iD))); }
-    public void SortName() { entries.Sort((x, y) => (x.name.CompareTo(y.name))); }
+    private string CompressString(string m_string)
+    {
+        string newString = "";
+        var splitString = m_string.Split(' ');
+
+        for (int i = 0; i < splitString.Length; i++)
+        {
+            newString += splitString[i].ToLower();
+        }
+        return newString;
+    }
+
+    public bool IsDatabase(string databaseName) =>
+        m_databaseName == databaseName;
+
+    public void SortID()
+    {
+        entries.Sort((x, y) => (x.ID.CompareTo(y.ID)));
+        m_orderedBy = OrderType.ID;
+    }
+    public void SortName()
+    {
+        entries.Sort((x, y) => (x.name.CompareTo(y.name)));
+        m_orderedBy = OrderType.Name;
+    }
 
     public int GetIndex(int instanceID)
     {
-        SortID();
+        if (m_orderedBy != OrderType.ID)
+        {
+            SortID();
+        }
 
         var minIndex = 0;
         var maxIndex = Count - 1;
@@ -101,9 +142,9 @@ public abstract class IDatabase : ScriptableObject {
         while (maxIndex >= minIndex)
         {
             int mid = (minIndex + maxIndex) / 2;
-            if (instanceID < entries[mid].iD)
+            if (instanceID < entries[mid].ID)
                 maxIndex = mid - 1;
-            else if (instanceID > entries[mid].iD)
+            else if (instanceID > entries[mid].ID)
                 minIndex = mid + 1;
             else
             {
@@ -114,8 +155,12 @@ public abstract class IDatabase : ScriptableObject {
         throw new EntryNotFoundException();
     }
 
-    public int GetIndex(string name) {
-        SortName();
+    public int GetIndex(string name)
+    {
+        if (m_orderedBy != OrderType.Name)
+        {
+            SortName();
+        }
 
         var minIndex = 0;
         var maxIndex = Count - 1;
@@ -124,7 +169,7 @@ public abstract class IDatabase : ScriptableObject {
         while (maxIndex >= minIndex)
         {
             int mid = (minIndex + maxIndex) / 2;
-            if (name.CompareTo(entries[mid].name)<0)
+            if (name.CompareTo(entries[mid].name) < 0)
                 maxIndex = mid - 1;
             else if (name.CompareTo(entries[mid].name) > 0)
                 minIndex = mid + 1;
@@ -137,24 +182,29 @@ public abstract class IDatabase : ScriptableObject {
         throw new EntryNotFoundException();
     }
 
-    public IEntry GetIEntry(int instanceID)
+    public IDatabaseEntry GetIEntry(int ID)
     {
-        var index = GetIndex(instanceID);
+        var index = GetIndex(ID);
         return entries[index];
     }
 
-    public bool IsName(string name) =>
-        m_name == name;
-
-    private string CompressString(string m_string)
+    public IDatabaseEntry GetIEntry(string name)
     {
-        string newString = "";
-        var splitString = m_string.Split(' ');
-
-        for (int i = 0; i < splitString.Length; i++)
-        {
-            newString += splitString[i].ToLower();
-        }
-        return newString;
+        var index = GetIndex(name);
+        return entries[index];
     }
+
+    public ListEntryT GetEntry(int ID)
+    {
+        var index = GetIndex(ID);
+        return entries[index];
+    }
+
+    public ListEntryT GetEntry(string name)
+    {
+        var index = GetIndex(name);
+        return entries[index];
+    }
+
+
 }

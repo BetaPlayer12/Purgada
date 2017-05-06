@@ -28,16 +28,19 @@ public class PlayerController : MonoBehaviour, DebugObject
             return CustomInput.Instance.isExecuted("Drop"); } }
 
 
-
-    // Use this for initialization
-    void Start()
+    public void EnableInput(bool value)
     {
-        m_rigidbody = GetComponent<Rigidbody2D>();
+        m_enableInput = value;
     }
 
     private void OnLevelStartEvent(LevelStartEvent e)
     {
-        m_enableInput = true;
+        EnableInput(true);
+    }
+
+    void Start()
+    {
+        m_rigidbody = GetComponent<Rigidbody2D>();
     }
 
     void OnEnable()
