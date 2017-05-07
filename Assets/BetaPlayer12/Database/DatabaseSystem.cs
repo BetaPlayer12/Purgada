@@ -23,6 +23,10 @@ public class DatabaseNotFoundException : Exception
 public class DatabaseSystem : ISystem
 {
     //TODO: Implicitly Declare variables of Databases and Store them to the IBaseDatabase array
+    [SerializeField]
+    private TrashDatabase m_trashDatabase;
+    [SerializeField]
+    private ObstacleDatabase m_obstacleDatabase;
 
     private IBaseDatabase[] m_databases;
 
@@ -30,6 +34,7 @@ public class DatabaseSystem : ISystem
     {
         foreach (IBaseDatabase database in m_databases)
         {
+
             if (database.GetType() == typeof(T))
                 return (T)database;
         }
@@ -41,7 +46,31 @@ public class DatabaseSystem : ISystem
         return GetDatabase<T>().Count;
     }
 
-    public T GetEntryOf<T>(int ID,string name ="") where T : IDatabaseEntry
+    public T GetEntryOf<T>(int ID) where T : IDatabaseEntry
+    {
+        foreach (IBaseDatabase database in m_databases)
+        {
+            if (database[0].GetType() == typeof(T))
+            {
+                return (T)database.GetIEntry(ID);
+            }
+        }
+        throw new EntryNotFoundException();
+    }
+
+    public T GetEntryOf<T>(string entryname) where T : IDatabaseEntry
+    {
+        foreach (IBaseDatabase database in m_databases)
+        {
+            if (database[0].GetType() == typeof(T) && database.IsDatabase(name))
+            {
+                return (T)database.GetIEntry(entryname);
+            }
+        }
+        throw new EntryNotFoundException();
+    }
+
+    public T GetEntryOf<T>(int ID,string name) where T : IDatabaseEntry
     {
         foreach (IBaseDatabase database in m_databases)
         {
@@ -60,5 +89,6 @@ public class DatabaseSystem : ISystem
 
     void Awake()
     {
+        m_databases = new IBaseDatabase[] { m_trashDatabase, m_obstacleDatabase };
     }
 }

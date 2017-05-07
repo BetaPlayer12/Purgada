@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Generates and Stores information that will be instantiated next
 /// </summary>
-public class LevelConstructor : MonoBehaviour
+public class LevelConstructor : Singleton<LevelConstructor>
 {
 
     private DatabaseSystem m_databaseSystem;
@@ -73,6 +73,7 @@ public class LevelConstructor : MonoBehaviour
 #endif
     private Queue<GameObject> m_platformQueue;
     private Queue<GameObject> m_trashQueue;
+    private Queue<GameObject> m_obstacleQueue;
 
 
     public GameObject GetPlatform()
@@ -82,9 +83,47 @@ public class LevelConstructor : MonoBehaviour
         return m_platformQueue.Dequeue();
     }
 
+    public GameObject GetTrash()
+    {
+        EnqueueTrash();
+        return m_trashQueue.Dequeue();
+    }
+
+    private void EnqueueTrash()
+    {
+        var index = Random.Range(0, m_databaseSystem.GetSize<TrashDatabase>());
+        m_trashQueue.Enqueue(m_databaseSystem.GetEntryOf<TrashDatabase.TrashEntry>(index).trash);
+    }
+
+    public GameObject GetObstacle()
+    {
+        EnqueueObstsacle();
+        return m_obstacleQueue.Dequeue();
+    }
+
+    private void EnqueueObstsacle()
+    {
+        var obstacleDatabase = m_databaseSystem.GetDatabase<ObstacleDatabase>();
+        m_obstacleQueue.Enqueue(obstacleDatabase.GetRandomObstacle());
+    }
+
+    private void InitializeQueues()
+    {
+        int queueSize = 5;
+        for (int i = 0; i < queueSize; i++)
+        {
+            EnqueueObstsacle();
+            EnqueueTrash();
+        }
+    }
 
     void Start()
     {
+        m_platformQueue = new Queue<GameObject>();
+        m_trashQueue = new Queue<GameObject>();
+        m_obstacleQueue = new Queue<GameObject>();
+
         m_databaseSystem = GameManager.Instance.GetSystem<DatabaseSystem>();
+        InitializeQueues();
     }
 }

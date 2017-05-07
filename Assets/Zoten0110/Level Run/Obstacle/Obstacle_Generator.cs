@@ -11,10 +11,11 @@ public class Obstacle_Generator : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        var levelConstructor = LevelConstructor.Instance;
         var bounds = m_spawnArea.bounds.extents.x;
         for (int i = 0; i < m_number; i++)
         {
-            var instance = Instantiate(prefab) as GameObject;
+            var instance = Instantiate(levelConstructor.GetObstacle()) as GameObject;
             instance.transform.parent = transform;
             var collider = instance.GetComponentInChildren<Collider2D>();
 

@@ -57,6 +57,7 @@ public abstract class IDatabase_Editor : Editor
 
     void OnDisable()
     {
+        OnUnloadModule();
         m_systemScript = null;
     }
 
@@ -367,6 +368,8 @@ public abstract class IDatabase_Editor : Editor
     }
 
     protected abstract void OnLoadModule();
+
+    protected abstract void OnUnloadModule();
 
     protected abstract void SaveAdditionalEntryInfo(SerializedProperty editedEntryProp);
 

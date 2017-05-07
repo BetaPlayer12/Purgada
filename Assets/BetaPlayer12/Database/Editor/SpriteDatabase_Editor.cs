@@ -11,7 +11,9 @@ public class SpriteDatabase_Editor : IDatabase_Editor {
 
     protected override void DisplayAdditionalFoldoutDetails(SerializedProperty entryProp)
     {
-        DisplayTexture("Sprite: ", m_overrideSpriteProp, true);
+        var entryItemProp = entryProp.FindPropertyRelative("m_sprite");
+
+        DisplayTexture("Sprite: ", entryItemProp, true);
     }
 
     protected override void DisplayEditableFoldout()
@@ -22,6 +24,11 @@ public class SpriteDatabase_Editor : IDatabase_Editor {
     protected override void OnLoadModule()
     {
         m_overrideSpriteProp = m_serializedObject.FindProperty("m_overrideSprite");
+    }
+
+    protected override void OnUnloadModule()
+    {
+        
     }
 
     protected override void OverrideEditableValues(SerializedProperty entryProp)

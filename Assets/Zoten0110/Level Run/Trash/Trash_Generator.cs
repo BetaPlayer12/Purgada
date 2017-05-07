@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Trash_Generator : MonoBehaviour
 {
-
-    public GameObject prefab;
     public Collider2D m_spawnArea;
     public int m_number;
 
@@ -49,10 +47,12 @@ public class Trash_Generator : MonoBehaviour
     {
         m_colliders = new List<Collider2D>();
 
+        var levelConstructor = LevelConstructor.Instance;
+
         var bounds = m_spawnArea.bounds.extents.x;
         for (int i = 0; i < m_number; i++)
         {
-            var instance = Instantiate(prefab) as GameObject;
+            var instance = Instantiate(levelConstructor.GetTrash()) as GameObject;
             instance.transform.parent = transform;
             var collider = instance.GetComponentInChildren<Collider2D>();
             do

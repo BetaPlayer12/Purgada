@@ -24,6 +24,11 @@ public class ItemDatabase_Editor : IDatabase_Editor
         m_overrideItemProp = m_serializedObject.FindProperty("m_overrideItem");
     }
 
+    protected override void OnUnloadModule()
+    {
+        throw new NotImplementedException();
+    }
+
     protected override void OverrideEditableValues(SerializedProperty entryProp)
     {
         var entryItemProp = entryProp.FindPropertyRelative("m_item");

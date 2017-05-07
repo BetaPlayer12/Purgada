@@ -22,16 +22,16 @@ public class Trash : MonoBehaviour {
     [SerializeField]
     private Rigidbody2D m_rigidBody;
     [SerializeField]
-    private Sprite m_sprite;
-    [SerializeField]
     private Type m_trashType;
+    private int m_ID;
 
     public Type trashType { get { return m_trashType; } }
+    public int ID { get { return m_ID; } }
 
-    public void SetInfo(Sprite newSprite, Type type)
+    public void SetInfo(Type type, int trashID)
     {
-        m_sprite = newSprite;
         m_trashType = type;
+        m_ID = trashID;
     }
 
 	// Update is called once per frame
