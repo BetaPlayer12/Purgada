@@ -14,13 +14,12 @@ public class Platform_Generator : MonoBehaviour {
 
     [SerializeField]
     private Transform m_parent;
-    [SerializeField]
-    private GameObject m_platform;
+    private LevelConstructor m_levelConstructor;
     public float m_spawnScale;
 
     private void CreatePlatform()
     {
-        var instance = Instantiate(m_platform, m_parent) as GameObject;
+        var instance = Instantiate(m_levelConstructor.GetPlatform(), m_parent) as GameObject;
         var instanceTransform = instance.transform;
         instanceTransform.localPosition = Vector3.zero;
         instanceTransform.localScale = Vector3.one * m_spawnScale;
@@ -35,7 +34,7 @@ public class Platform_Generator : MonoBehaviour {
 
     void Start()
     {
-        //CreatePlatform();
+        m_levelConstructor = LevelConstructor.Instance;
     }
 
     void OnEnable()

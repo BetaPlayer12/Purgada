@@ -10,6 +10,19 @@ public class LevelConstructor : Singleton<LevelConstructor>
 
     private DatabaseSystem m_databaseSystem;
 
+    private DatabaseSystem databaseSystem
+    {
+        get
+        {
+            if (m_databaseSystem == null)
+            {
+                m_databaseSystem = GameManager.Instance.GetSystem<DatabaseSystem>();
+
+            }
+            return m_databaseSystem;
+        }
+    }
+
 #if false //Use this if Queue<T> wont work well
     private class ItemInfo
     {
@@ -78,9 +91,14 @@ public class LevelConstructor : Singleton<LevelConstructor>
 
     public GameObject GetPlatform()
     {
-        var index = 0;
-        m_platformQueue.Enqueue(m_databaseSystem.GetEntryOf<ItemDatabase.ItemEntry>(index).item);
+        EnqueuePlatform();
         return m_platformQueue.Dequeue();
+    }
+
+    private void EnqueuePlatform()
+    {
+        var index = Random.Range(0, databaseSystem.GetSize<PlatformDatabase>());
+        m_platformQueue.Enqueue(databaseSystem.GetEntryOf<ItemDatabase.ItemEntry>(index).item);
     }
 
     public GameObject GetTrash()
@@ -91,8 +109,8 @@ public class LevelConstructor : Singleton<LevelConstructor>
 
     private void EnqueueTrash()
     {
-        var index = Random.Range(0, m_databaseSystem.GetSize<TrashDatabase>());
-        m_trashQueue.Enqueue(m_databaseSystem.GetEntryOf<TrashDatabase.TrashEntry>(index).trash);
+        var index = Random.Range(0, databaseSystem.GetSize<TrashDatabase>());
+        m_trashQueue.Enqueue(databaseSystem.GetEntryOf<TrashDatabase.TrashEntry>(index).trash);
     }
 
     public GameObject GetObstacle()
@@ -103,7 +121,7 @@ public class LevelConstructor : Singleton<LevelConstructor>
 
     private void EnqueueObstsacle()
     {
-        var obstacleDatabase = m_databaseSystem.GetDatabase<ObstacleDatabase>();
+        var obstacleDatabase = databaseSystem.GetDatabase<ObstacleDatabase>();
         m_obstacleQueue.Enqueue(obstacleDatabase.GetRandomObstacle());
     }
 
@@ -112,18 +130,21 @@ public class LevelConstructor : Singleton<LevelConstructor>
         int queueSize = 5;
         for (int i = 0; i < queueSize; i++)
         {
+            EnqueuePlatform();
             EnqueueObstsacle();
             EnqueueTrash();
         }
     }
 
-    void Start()
+    void Awake()
     {
         m_platformQueue = new Queue<GameObject>();
         m_trashQueue = new Queue<GameObject>();
         m_obstacleQueue = new Queue<GameObject>();
+    }
 
-        m_databaseSystem = GameManager.Instance.GetSystem<DatabaseSystem>();
+    void Start()
+    {
         InitializeQueues();
     }
 }
