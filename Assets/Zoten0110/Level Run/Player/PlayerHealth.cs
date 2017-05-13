@@ -10,6 +10,16 @@ public class PlayerDeathEvent : GameEvent
     }
 }
 
+public class PlayerDamageEvent : GameEvent
+{
+
+    public PlayerDamageEvent(GameObject senderObj) : base(senderObj)
+    {
+        sender = senderObj;
+
+    }
+}
+
 public class PlayerHealth : MonoBehaviour {
 
     [SerializeField]
@@ -17,18 +27,29 @@ public class PlayerHealth : MonoBehaviour {
     [SerializeField]///Debug;
     private float m_currentHealth;
 
+    private float m_damageReduction;
+
     private bool m_invulnerable;
     private bool m_dead;
 
+    public float currentHealth { get { return m_currentHealth; } }
+
     public void BecomeInvulnerable(bool value) =>
         m_invulnerable = value;
+
+    public void SetDamageReduction(float damageReduction)
+    {
+        m_damageReduction = damageReduction;
+    }
 
     public void Damage(float damage)
     {
         if (m_invulnerable)
             return;
 
-        m_currentHealth -= damage;
+        m_currentHealth -= damage - (damage * (m_damageReduction/100) );
+
+        this.RaiseEventGlobal(new PlayerDamageEvent(gameObject));
 
         if (m_currentHealth <= 0f)
         {

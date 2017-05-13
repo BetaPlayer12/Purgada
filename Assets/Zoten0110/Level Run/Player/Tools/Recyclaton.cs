@@ -20,6 +20,7 @@ public class Recyclaton : Tool
     protected void OnSuccesfulDisposal()
     {
         Debug.Log("Recyclaton Disposed Trash");
+        LevelRunMoneyHandler.Instance.GiveMoney();
     }
 
     protected void OnFailedDisposal()

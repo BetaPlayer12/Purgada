@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Token_Sponsorship : MonoBehaviour {
+public class Token_Sponsorship : IToken {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    [SerializeField]
+    private int m_moneyFactor =1;
+
+    public override TokenTypes type { get { return TokenTypes.Sponsorship; } }
+
+    public override void MakeActive()
+    {
+        base.MakeActive();
+        if (m_isActive)
+        {
+            LevelRunMoneyHandler.Instance.SetMoneyFactor(m_moneyFactor);
+        }
+    }
 }

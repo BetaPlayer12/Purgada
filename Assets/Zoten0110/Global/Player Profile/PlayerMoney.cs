@@ -21,4 +21,9 @@ public class PlayerMoney : MonoBehaviour
     public bool CanAfford(int value) =>
     m_currentMoney >= value;
 
+    void Start()
+    {
+        m_currentMoney = m_startingMoney;
+    }
+
 }

@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum TokenTypes
+{
+    Miracle_Drug,
+    Sponsorship,
+    Booster_Shot
+}
+
 public abstract class IToken : MonoBehaviour
 {
     protected bool m_isActive;
 
-    protected abstract void OnLevelStart(LevelStartEvent e);
+    public abstract TokenTypes type {get;}
 
-    void OnEnable()
+    public virtual void MakeActive()
     {
-        this.AddEventListenerGlobal<LevelStartEvent>(OnLevelStart);
-    }
-
-    void OnDisable()
-    {
-        this.RemoveEventListenerGlobal<LevelStartEvent>(OnLevelStart);
+        m_isActive = true;
     }
 
 }
-	
+
