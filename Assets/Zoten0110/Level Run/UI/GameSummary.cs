@@ -16,7 +16,7 @@ public class GameSummary : MonoBehaviour {
 
     public void ResetLeve()
     {
-        SceneManager.LoadScene("Test");
+        SceneManager.LoadScene("Game");
     }
 
     void OnEnable()

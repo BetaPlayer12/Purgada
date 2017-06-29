@@ -7,7 +7,6 @@ using UnityEngine;
 /// </summary>
 public class LevelConstructor : Singleton<LevelConstructor>
 {
-
     private DatabaseSystem m_databaseSystem;
 
     private DatabaseSystem databaseSystem
@@ -98,7 +97,7 @@ public class LevelConstructor : Singleton<LevelConstructor>
     private void EnqueuePlatform()
     {
         var index = Random.Range(0, databaseSystem.GetSize<PlatformDatabase>());
-        m_platformQueue.Enqueue(databaseSystem.GetEntryOf<ItemDatabase.ItemEntry>(index).item);
+        m_platformQueue.Enqueue(databaseSystem.GetEntryOf<PlatformDatabase.PlatformEntry>(index).platform);
     }
 
     public GameObject GetTrash()

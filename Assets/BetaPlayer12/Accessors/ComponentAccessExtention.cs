@@ -77,7 +77,7 @@ public static class ComponentAccessExtention {
     /// <param name="name">name of the child</param>
     /// <returns></returns>
 	public static T GetComponentOfChild<T>(this Component _component, string name) where T: Component =>
-        _component.transform.FindChild(name).GetComponent<T>();
+        _component.transform.Find(name).GetComponent<T>();
 
     /// <summary>
     /// Gets component of the children that starts with the name indicated

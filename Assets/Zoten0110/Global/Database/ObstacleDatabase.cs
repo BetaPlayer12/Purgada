@@ -22,6 +22,14 @@ public class ObstacleDatabase : IDatabase<ObstacleDatabase.ObstacleEntry>
     private List<ObstacleEntry> m_entries;
     private ObstacleEntry[] m_nonEntityInstantiatedEntries;
 
+    private ObstacleEntry[] nonEntityInstantiatedEntries { get
+        {
+            if(m_nonEntityInstantiatedEntries == null || m_nonEntityInstantiatedEntries.Length == 0)
+            {
+                UpdateSeperateEntries();
+            }
+            return m_nonEntityInstantiatedEntries;
+        } }
 
     public override List<ObstacleEntry> entries
     {
@@ -76,15 +84,15 @@ public class ObstacleDatabase : IDatabase<ObstacleDatabase.ObstacleEntry>
 #endif
 
     public GameObject GetRandomObstacle() =>
-        m_nonEntityInstantiatedEntries[Random.Range(0, m_nonEntityInstantiatedEntries.Length)].obstacle;
+        nonEntityInstantiatedEntries[Random.Range(0, nonEntityInstantiatedEntries.Length)].obstacle;
 
     public GameObject GetObstacle(int ID)
     {
-        for (int i = 0; i < m_nonEntityInstantiatedEntries.Length; i++)
+        for (int i = 0; i < nonEntityInstantiatedEntries.Length; i++)
         {
-            if (m_nonEntityInstantiatedEntries[i].ID == ID)
+            if (nonEntityInstantiatedEntries[i].ID == ID)
             {
-                return m_nonEntityInstantiatedEntries[i].obstacle;
+                return nonEntityInstantiatedEntries[i].obstacle;
             }
         }
         return null;

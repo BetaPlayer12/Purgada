@@ -18,6 +18,11 @@ public class ConstantMovement : MonoBehaviour {
         Move();
     }
 
+    private void Start()
+    {
+        m_move = Vector3.left * GlobalGameSettings.platformSpeed;
+    }
+
     void OnEnable()
     {
         this.AddEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);

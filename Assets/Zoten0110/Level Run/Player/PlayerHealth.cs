@@ -33,6 +33,7 @@ public class PlayerHealth : MonoBehaviour {
     private bool m_dead;
 
     public float currentHealth { get { return m_currentHealth; } }
+    public float currentHealthRatio { get { return m_currentHealth / m_maxHealth; } }
 
     public void BecomeInvulnerable(bool value) =>
         m_invulnerable = value;
@@ -69,7 +70,7 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     private void OnTrashMissedEvent(TrashMissedEvent e) =>
-        Damage(GameManager.Instance.globalGameSettings.trashMissDamage);
+        Damage(GlobalGameSettings.trashMissDamage);
 
     // Use this for initialization
     void Start ()

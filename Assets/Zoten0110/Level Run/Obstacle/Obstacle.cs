@@ -9,6 +9,9 @@ public class Obstacle : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        this.RaiseEventGlobal(new InflictDiseaseToPlayerEvent(gameObject,m_inflictDisease));
+        if (other.gameObject.tag == "Player")
+        {
+            this.RaiseEventGlobal(new InflictDiseaseToPlayerEvent(gameObject, m_inflictDisease));
+        }
     }
 }

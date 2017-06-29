@@ -40,7 +40,7 @@ public class SoilCanon_Projectile : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("SoilCanon Hit");
+        Debug.Log("SoilCanon Hit " + other.gameObject.name);
         OnHit(other.gameObject.GetComponentInParent<Trash>());
     }
 }

@@ -24,8 +24,7 @@ public class PlayerController : MonoBehaviour, DebugObject
     private bool m_enableInput;
 
     private bool jumpInput { get { return CustomInput.Instance.isTapped(CustomInputType.MonoInput,"Jump"); } }
-    private bool dropInput { get {
-            return CustomInput.Instance.isExecuted("Drop"); } }
+    private bool dropInput { get { return CustomInput.Instance.isExecuted("Drop"); } }
 
 
     public void EnableInput(bool value)
@@ -56,6 +55,8 @@ public class PlayerController : MonoBehaviour, DebugObject
 
         //Input Checks
         {
+            m_isJumping = m_rigidbody.velocity.y > 0.1f || m_rigidbody.velocity.y < -0.1f;
+
             if (jumpInput && !m_isJumping)
             {
                 if (dropInput && m_canDrop)

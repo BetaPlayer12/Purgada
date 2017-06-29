@@ -27,6 +27,8 @@ public class DatabaseSystem : ISystem
     private TrashDatabase m_trashDatabase;
     [SerializeField]
     private ObstacleDatabase m_obstacleDatabase;
+    [SerializeField]
+    private PlatformDatabase m_platformDatabse;
 
     private IBaseDatabase[] m_databases;
 
@@ -89,6 +91,6 @@ public class DatabaseSystem : ISystem
 
     void Awake()
     {
-        m_databases = new IBaseDatabase[] { m_trashDatabase, m_obstacleDatabase };
+        m_databases = new IBaseDatabase[] { m_trashDatabase, m_obstacleDatabase, m_platformDatabse };
     }
 }

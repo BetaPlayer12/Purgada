@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 634df4585f600ae4186f977f75b0188f
+timeCreated: 1497847931
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Angry Birds Movie
+  fontNames:
+  - Angry Birds Movie
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
