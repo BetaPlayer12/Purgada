@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EndPattern : MonoBehaviour
+public class EndObject : MonoBehaviour
 {
     private float m_referenceResolutionX;
 

@@ -72,6 +72,8 @@ public class PlayerHealth : MonoBehaviour {
     private void OnTrashMissedEvent(TrashMissedEvent e) =>
         Damage(GlobalGameSettings.trashMissDamage);
 
+
+
     // Use this for initialization
     void Start ()
     {
@@ -82,10 +84,12 @@ public class PlayerHealth : MonoBehaviour {
     void OnEnable()
     {
         this.AddEventListenerGlobal<TrashMissedEvent>(OnTrashMissedEvent);
+       
     }
 
     void OnDisable()
     {
         this.RemoveEventListenerGlobal<TrashMissedEvent>(OnTrashMissedEvent);
+
     }
 }

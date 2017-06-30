@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class DiseaseEndEvent : GameEvent
+{
+    public DiseaseEndEvent(GameObject senderObj) : base(senderObj)
+    {
+        sender = senderObj;
+    }
+}
+
 public abstract class IDisease : MonoBehaviour
 {
     [SerializeField]
@@ -15,6 +23,7 @@ public abstract class IDisease : MonoBehaviour
         yield return new WaitForSeconds(m_duration);
         m_isActive = false;
         DiseaseEnd();
+        this.RaiseEventGlobal(new DiseaseEndEvent(gameObject));
     }
 
     protected abstract void DiseaseStart();

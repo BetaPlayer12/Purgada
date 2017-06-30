@@ -6,6 +6,8 @@ public class ConstantMovement : MonoBehaviour {
 
     public Vector3 m_move;
     [SerializeField]
+    private bool m_manualOverride;
+    [SerializeField]
     private bool m_active;
 	
     public void Move()
@@ -20,7 +22,10 @@ public class ConstantMovement : MonoBehaviour {
 
     private void Start()
     {
-        m_move = Vector3.left * GlobalGameSettings.platformSpeed;
+        if (!m_manualOverride)
+        {
+            m_move = Vector3.left * GlobalGameSettings.platformSpeed;
+        }
     }
 
     void OnEnable()

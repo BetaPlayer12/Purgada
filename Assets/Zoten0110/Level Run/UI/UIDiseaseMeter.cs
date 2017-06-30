@@ -22,6 +22,12 @@ public class UIDiseaseMeter : MonoBehaviour
 
     private bool m_playerIsInfected;
 
+    private void OnInflictDiseaseToPlayerEvent(InflictDiseaseToPlayerEvent e) =>
+        m_playerIsInfected = true;
+
+    private void OnDiseaseEndEvent(DiseaseEndEvent e) =>
+        m_playerIsInfected = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -77,5 +83,17 @@ public class UIDiseaseMeter : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnEnable()
+    {
+        this.AddEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
+        this.AddEventListenerGlobal<DiseaseEndEvent>(OnDiseaseEndEvent);
+    }
+
+    private void OnDisable()
+    {
+        this.RemoveEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
+        this.RemoveEventListenerGlobal<DiseaseEndEvent>(OnDiseaseEndEvent);
     }
 }

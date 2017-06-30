@@ -15,7 +15,7 @@ public class Token_MiracleDrug : IToken
     {
         if (m_isActive)
         {
-            if (m_playerHealth.currentHealth >= 0)
+            if (m_playerHealth.currentHealth <= 0)
             {
                 m_playerHealth.Heal(float.MaxValue);
             }
