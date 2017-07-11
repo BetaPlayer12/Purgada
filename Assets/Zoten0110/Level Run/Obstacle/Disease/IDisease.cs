@@ -23,7 +23,7 @@ public abstract class IDisease : MonoBehaviour
         yield return new WaitForSeconds(m_duration);
         m_isActive = false;
         DiseaseEnd();
-        this.RaiseEventGlobal(new DiseaseEndEvent(gameObject));
+        this.RaiseGameEventGlobal(new DiseaseEndEvent(gameObject));
     }
 
     protected abstract void DiseaseStart();

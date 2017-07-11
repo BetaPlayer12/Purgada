@@ -21,12 +21,12 @@ public class GameSummary : MonoBehaviour {
 
     void OnEnable()
     {
-        this.AddEventListenerGlobal<PlayerDeathEvent>(OnPlayerDeathEvent);
+        this.AddGameEventListenerGlobal<PlayerDeathEvent>(OnPlayerDeathEvent);
     }
 
     void OnDisable()
     {
-        this.RemoveEventListenerGlobal<PlayerDeathEvent>(OnPlayerDeathEvent);
+        this.RemoveGameEventListenerGlobal<PlayerDeathEvent>(OnPlayerDeathEvent);
     }
 
 }

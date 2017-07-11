@@ -17,7 +17,7 @@ public class MouseFollow : MonoBehaviour, DebugObject
 
     void OnEnable()
     {
-        this.AddEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
+        this.AddGameEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class MouseFollow : MonoBehaviour, DebugObject
 
     void OnDisable()
     {
-        this.RemoveEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
+        this.RemoveGameEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
     }
 
     void DebugObject.OnDebug()

@@ -39,7 +39,7 @@ public class Trash : MonoBehaviour {
         var screenPosition = Camera.main.WorldToScreenPoint(transform.position);
         if (screenPosition.x <= -50)
         {
-            this.RaiseEventGlobal(new TrashMissedEvent(gameObject));
+            this.RaiseGameEventGlobal(new TrashMissedEvent(gameObject));
             Destroy(gameObject);
         }
     }

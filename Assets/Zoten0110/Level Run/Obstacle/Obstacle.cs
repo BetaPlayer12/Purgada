@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            this.RaiseEventGlobal(new InflictDiseaseToPlayerEvent(gameObject, m_inflictDisease));
+            this.RaiseGameEventGlobal(new InflictDiseaseToPlayerEvent(gameObject, m_inflictDisease));
         }
     }
 }

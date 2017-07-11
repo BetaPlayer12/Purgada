@@ -50,11 +50,11 @@ public class PlayerHealth : MonoBehaviour {
 
         m_currentHealth -= damage - (damage * (m_damageReduction/100) );
 
-        this.RaiseEventGlobal(new PlayerDamageEvent(gameObject));
+        this.RaiseGameEventGlobal(new PlayerDamageEvent(gameObject));
 
         if (m_currentHealth <= 0f)
         {
-            this.RaiseEventGlobal(new PlayerDeathEvent(gameObject));
+            this.RaiseGameEventGlobal(new PlayerDeathEvent(gameObject));
             m_dead = true;
         }
     }
@@ -83,13 +83,13 @@ public class PlayerHealth : MonoBehaviour {
 
     void OnEnable()
     {
-        this.AddEventListenerGlobal<TrashMissedEvent>(OnTrashMissedEvent);
+        this.AddGameEventListenerGlobal<TrashMissedEvent>(OnTrashMissedEvent);
        
     }
 
     void OnDisable()
     {
-        this.RemoveEventListenerGlobal<TrashMissedEvent>(OnTrashMissedEvent);
+        this.RemoveGameEventListenerGlobal<TrashMissedEvent>(OnTrashMissedEvent);
 
     }
 }

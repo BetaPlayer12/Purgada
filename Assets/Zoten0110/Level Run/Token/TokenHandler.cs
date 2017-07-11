@@ -23,11 +23,11 @@ public class TokenHandler : MonoBehaviour {
 
     void OnEnable()
     {
-        this.AddEventListenerGlobal<LevelStartEvent>(OnLevelStart);
+        this.AddGameEventListenerGlobal<LevelStartEvent>(OnLevelStart);
     }
 
     void OnDisable()
     {
-        this.RemoveEventListenerGlobal<LevelStartEvent>(OnLevelStart);
+        this.RemoveGameEventListenerGlobal<LevelStartEvent>(OnLevelStart);
     }
 }

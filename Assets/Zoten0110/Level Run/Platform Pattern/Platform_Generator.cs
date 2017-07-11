@@ -39,12 +39,12 @@ public class Platform_Generator : MonoBehaviour {
 
     void OnEnable()
     {
-        this.AddEventListenerGlobal<CreatePlatformEvent>(OnCreatePlatformEvent);
+        this.AddGameEventListenerGlobal<CreatePlatformEvent>(OnCreatePlatformEvent);
     }
 
     void OnDisable()
     {
-        this.RemoveEventListenerGlobal<CreatePlatformEvent>(OnCreatePlatformEvent);
+        this.RemoveGameEventListenerGlobal<CreatePlatformEvent>(OnCreatePlatformEvent);
     }
 
 }

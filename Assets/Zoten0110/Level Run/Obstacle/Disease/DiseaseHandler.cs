@@ -50,12 +50,12 @@ public class DiseaseHandler : MonoBehaviour {
 
     void OnEnable()
     {
-        this.AddEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
+        this.AddGameEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
     }
 
     void OnDisable()
     {
-        this.RemoveEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
+        this.RemoveGameEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
     }
 
 }

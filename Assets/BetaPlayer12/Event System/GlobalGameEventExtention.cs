@@ -9,7 +9,7 @@ public static class GlobalGameEventExtention {
     private static readonly bool LOG_ENABLED = false;
 
     #region GameObject
-    public static void RaiseEvent<T>(this GameObject obj, T e) where T : GameEvent
+    public static void RaiseGameEvent<T>(this GameObject obj, T e) where T : GameEvent
     {
         GameEventMessenger em;
         if (!Messengers.TryGetValue(obj, out em))
@@ -25,12 +25,12 @@ public static class GlobalGameEventExtention {
         }
     }
 
-    public static void RaiseEventGlobal<T>(this GameObject obj, T e) where T : GameEvent
+    public static void RaiseGameEventGlobal<T>(this GameObject obj, T e) where T : GameEvent
     {
         GlobalMessenger.Raise<T>(e);
     }
 
-    public static void AddEventListener<T>(this GameObject obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
+    public static void AddGameEventListener<T>(this GameObject obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
     {
         GameEventMessenger em;
         if (!Messengers.TryGetValue(obj, out em))
@@ -46,12 +46,12 @@ public static class GlobalGameEventExtention {
         }
     }
 
-    public static void AddEventListenerGlobal<T>(this GameObject obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
+    public static void AddGameEventListenerGlobal<T>(this GameObject obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
     {
         GlobalMessenger.AddListener<T>(del);
     }
 
-    public static void RemoveEventListener<T>(this GameObject obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
+    public static void RemoveGameEventListener<T>(this GameObject obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
     {
         GameEventMessenger em;
         if (!Messengers.TryGetValue(obj, out em)) return;
@@ -65,7 +65,7 @@ public static class GlobalGameEventExtention {
         }
     }
 
-    public static void RemoveEventListeners(this GameObject obj)
+    public static void RemoveGameEventListeners(this GameObject obj)
     {
         Messengers.Remove(obj);
 
@@ -75,47 +75,47 @@ public static class GlobalGameEventExtention {
         }
     }
 
-    public static void RemoveEventListenerGlobal<T>(this GameObject obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
+    public static void RemoveGameEventListenerGlobal<T>(this GameObject obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
     {
         GlobalMessenger.RemoveListener<T>(del);
     }
     #endregion
 
     #region MonoBehaviour
-    public static void RaiseEvent<T>(this MonoBehaviour obj, T e) where T : GameEvent
+    public static void RaiseGameEvent<T>(this MonoBehaviour obj, T e) where T : GameEvent
     {
         GameObject go = obj.gameObject;
-        go.RaiseEvent<T>(e);
+        go.RaiseGameEvent<T>(e);
     }
 
-    public static void RaiseEventGlobal<T>(this MonoBehaviour obj, T e) where T : GameEvent
+    public static void RaiseGameEventGlobal<T>(this MonoBehaviour obj, T e) where T : GameEvent
     {
         GlobalMessenger.Raise<T>(e);
     }
 
-    public static void AddEventListener<T>(this MonoBehaviour obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
+    public static void AddGameEventListener<T>(this MonoBehaviour obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
     {
         GameObject go = obj.gameObject;
-        go.AddEventListener<T>(del);
+        go.AddGameEventListener<T>(del);
     }
 
-    public static void AddEventListenerGlobal<T>(this MonoBehaviour obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
+    public static void AddGameEventListenerGlobal<T>(this MonoBehaviour obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
     {
         GlobalMessenger.AddListener<T>(del);
     }
 
-    public static void RemoveEventListener<T>(this MonoBehaviour obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
+    public static void RemoveGameEventListener<T>(this MonoBehaviour obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
     {
         GameObject go = obj.gameObject;
-        go.RemoveEventListener<T>(del);
+        go.RemoveGameEventListener<T>(del);
     }
 
-    public static void RemoveEventListeners(this MonoBehaviour obj)
+    public static void RemoveGameEventListeners(this MonoBehaviour obj)
     {
         Messengers.Remove(obj.gameObject);
     }
 
-    public static void RemoveEventListenerGlobal<T>(this MonoBehaviour obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
+    public static void RemoveGameEventListenerGlobal<T>(this MonoBehaviour obj, GameEventMessenger.EventDelegate<T> del) where T : GameEvent
     {
         GlobalMessenger.RemoveListener<T>(del);
     }

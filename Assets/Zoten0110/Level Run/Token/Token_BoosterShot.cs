@@ -13,7 +13,6 @@ public class Token_BoosterShot : IToken {
 
     public override void MakeActive()
     {
-        base.MakeActive();
         if (m_isActive)
         {
             m_playerHealth.SetDamageReduction(m_damageReduction);

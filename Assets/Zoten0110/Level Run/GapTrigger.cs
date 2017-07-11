@@ -9,7 +9,7 @@ public class GapTrigger : MonoBehaviour {
         if (collision.gameObject.GetComponentInParent<PlayerHealth>())
         {
             Debug.Log("Called it");
-            this.RaiseEventGlobal<PlayerDeathEvent>(new PlayerDeathEvent(gameObject));
+            this.RaiseGameEventGlobal<PlayerDeathEvent>(new PlayerDeathEvent(gameObject));
         }
     }
 }

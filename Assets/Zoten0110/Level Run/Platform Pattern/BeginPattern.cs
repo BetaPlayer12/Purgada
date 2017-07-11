@@ -25,7 +25,7 @@ public class BeginPattern : MonoBehaviour
             var screenPosition = Camera.main.WorldToScreenPoint(transform.position);
             if (screenPosition.x <= m_referenceResolutionX && !m_hasRaisedEvent)
             {
-                this.RaiseEventGlobal(new CreatePlatformEvent(gameObject));
+                this.RaiseGameEventGlobal(new CreatePlatformEvent(gameObject));
                 m_hasRaisedEvent = true;
             }
 

@@ -22,13 +22,14 @@ public class Token_MiracleDrug : IToken
         }
     }
 
-    void OnEnable()
+    protected override void OnLoadModule()
     {
-        this.AddEventListenerGlobal<PlayerDamageEvent>(OnPlayerDamageEvent);
+        this.AddGameEventListenerGlobal<PlayerDamageEvent>(OnPlayerDamageEvent);
     }
 
-    void OnDisable()
+
+    protected override void OnUnloadModule()
     {
-        this.RemoveEventListenerGlobal<PlayerDamageEvent>(OnPlayerDamageEvent);
+        this.RemoveGameEventListenerGlobal<PlayerDamageEvent>(OnPlayerDamageEvent);
     }
 }

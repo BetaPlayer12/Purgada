@@ -30,7 +30,7 @@ public class ConstantMovement : MonoBehaviour {
 
     void OnEnable()
     {
-        this.AddEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
+        this.AddGameEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
     }
 
 	// Update is called once per frame
@@ -43,6 +43,6 @@ public class ConstantMovement : MonoBehaviour {
 
     void OnDisable()
     {
-        this.RemoveEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
+        this.RemoveGameEventListenerGlobal<LevelStartEvent>(OnLevelStartEvent);
     }
 }

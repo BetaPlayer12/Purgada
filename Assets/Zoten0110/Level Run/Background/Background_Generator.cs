@@ -35,11 +35,11 @@ public class Background_Generator : MonoBehaviour {
 
     void OnEnable()
     {
-        this.AddEventListenerGlobal<CreateBackgroundEvent>(OnCreateBackgroundEvent);
+        this.AddGameEventListenerGlobal<CreateBackgroundEvent>(OnCreateBackgroundEvent);
     }
 
     void OnDisable()
     {
-        this.RemoveEventListenerGlobal<CreateBackgroundEvent>(OnCreateBackgroundEvent);
+        this.RemoveGameEventListenerGlobal<CreateBackgroundEvent>(OnCreateBackgroundEvent);
     }
 }

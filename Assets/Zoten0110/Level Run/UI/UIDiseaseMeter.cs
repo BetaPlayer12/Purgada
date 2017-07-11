@@ -87,13 +87,13 @@ public class UIDiseaseMeter : MonoBehaviour
 
     private void OnEnable()
     {
-        this.AddEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
-        this.AddEventListenerGlobal<DiseaseEndEvent>(OnDiseaseEndEvent);
+        this.AddGameEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
+        this.AddGameEventListenerGlobal<DiseaseEndEvent>(OnDiseaseEndEvent);
     }
 
     private void OnDisable()
     {
-        this.RemoveEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
-        this.RemoveEventListenerGlobal<DiseaseEndEvent>(OnDiseaseEndEvent);
+        this.RemoveGameEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
+        this.RemoveGameEventListenerGlobal<DiseaseEndEvent>(OnDiseaseEndEvent);
     }
 }

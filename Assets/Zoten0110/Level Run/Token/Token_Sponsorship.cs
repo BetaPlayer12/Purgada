@@ -11,7 +11,6 @@ public class Token_Sponsorship : IToken {
 
     public override void MakeActive()
     {
-        base.MakeActive();
         if (m_isActive)
         {
             LevelRunMoneyHandler.Instance.SetMoneyFactor(m_moneyFactor);

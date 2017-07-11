@@ -22,7 +22,7 @@ public class CameraAnimation : MonoBehaviour {
 
     public void StartLevel()
     {
-        this.RaiseEventGlobal(new LevelStartEvent(gameObject));
+        this.RaiseGameEventGlobal(new LevelStartEvent(gameObject));
     }
 
     void Awake()
