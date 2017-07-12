@@ -52,7 +52,7 @@ public class Trash_Generator : MonoBehaviour
         var bounds = m_spawnArea.bounds.extents.x;
 
 
-        if (GlobalGameSettings.enableTrashGenerator)
+        if (GlobalGameSettings.Instance.enableTrashGenerator)
         {
             for (int i = 0; i < m_number; i++)
             {

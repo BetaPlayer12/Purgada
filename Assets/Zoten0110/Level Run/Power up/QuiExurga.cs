@@ -14,6 +14,14 @@ public class QuiExurga : IPowerup {
     private float m_maxPower;
     private float m_vaccumIncreaseRate;
 
+    public override Type type
+    {
+        get
+        {
+            return Type.QuiExurga;
+        }
+    }
+
     private void DischargeCell() { }
     private void GainMoney() { }
 

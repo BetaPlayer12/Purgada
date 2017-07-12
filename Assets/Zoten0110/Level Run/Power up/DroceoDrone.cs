@@ -7,6 +7,14 @@ public class DroceoDrone : IPowerup
 {
     private List<Trash> m_scannedTrash = new List<Trash>();
 
+    public override Type type
+    {
+        get
+        {
+            return Type.Droceo_Drone;
+        }
+    }
+
     private void RemoveNullOnList()
     {
         for (int i = m_scannedTrash.Count - 1; i >= 0; i--)

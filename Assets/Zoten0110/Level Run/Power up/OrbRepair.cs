@@ -11,7 +11,15 @@ public class OrbRepair : IPowerup
     private List<Obstacle> m_obstacleList = new List<Obstacle>();
 
     public Rigidbody2D m_rig;
-    
+
+    public override Type type
+    {
+        get
+        {
+            return Type.Orb_Repair;
+        }
+    }
+
     protected override void PowerupFunction()
     {
         if (m_creature.hasTarget)

@@ -32,7 +32,7 @@ public abstract class IConfirmationHandler : MonoBehaviour {
 
     protected abstract void OnAffirmResponse();
     protected abstract void OnDeclineResponse();
-
+    protected virtual void OnStartModule() { }
 
     private void Start()
     {
@@ -40,5 +40,6 @@ public abstract class IConfirmationHandler : MonoBehaviour {
         {
             confirmationResponse = ConfirmationResponse;
         }
+        OnStartModule();
     }
 }

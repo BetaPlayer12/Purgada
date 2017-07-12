@@ -15,6 +15,8 @@ public class GlobalGameSettings : Singleton<GlobalGameSettings>
     private bool m_powerupGenerator = true;
     [SerializeField]
     private bool m_characterGenerator = true;
+    [SerializeField]
+    private PowerupDatabase m_powerupDatabase;
 
     [SerializeField]
     private float m_platformSpeed;
@@ -26,27 +28,18 @@ public class GlobalGameSettings : Singleton<GlobalGameSettings>
 
 
 
-    #region StaticFields
-    private static bool m_staticPlatformGenerator;
-    private static bool m_staticTrashGenerator;
-    private static bool m_staticObstacleGenerator;
-    private static bool m_staticPowerupGenerator;
-    private static bool m_staticCharacterGenerator;
 
-    private static float m_staticPlatformSpeed;
-    private static float m_staticTrashMisDamage;
-    private static float m_staticDisposeFailDamage;
-    #endregion
 
-    public static bool enablePlatformGenerator { get { return m_staticPlatformGenerator; } }
-    public static bool enableTrashGenerator { get { return m_staticTrashGenerator; } }
-    public static bool enableObstacleGenerator { get { return m_staticObstacleGenerator; } }
-    public static bool enablePowerupGenerator { get { return m_staticPowerupGenerator; } }
-    public static bool enableCharacterGenerator { get { return m_staticCharacterGenerator; } }
+    public bool enablePlatformGenerator { get { return m_platformGenerator; } }
+    public bool enableTrashGenerator { get { return m_trashGenerator; } }
+    public bool enableObstacleGenerator { get { return m_obstacleGenerator; } }
+    public bool enablePowerupGenerator { get { return m_powerupGenerator; } }
+    public bool enableCharacterGenerator { get { return m_characterGenerator; } }
 
-    public static float platformSpeed { get { return m_staticPlatformSpeed; } }
-    public static float trashMissDamage { get { return m_staticTrashMisDamage; } }
-    public static  float disposeFailDamage { get { return m_staticDisposeFailDamage; } }
+    public float platformSpeed { get { return m_platformSpeed; } }
+    public float trashMissDamage { get { return m_trashMissDamage; } }
+    public float disposeFailDamage { get { return m_disposeFailDamage; } }
+    public PowerupDatabase powerupDatabase { get { return m_powerupDatabase; } }
 
 
     private void Awake()
@@ -62,15 +55,6 @@ public class GlobalGameSettings : Singleton<GlobalGameSettings>
             Destroy(this);
         }
 
-        m_staticPlatformGenerator = m_platformGenerator;
-        m_staticTrashGenerator = m_trashGenerator;
-        m_staticObstacleGenerator = m_obstacleGenerator;
-        m_staticPowerupGenerator = m_powerupGenerator;
-        m_staticCharacterGenerator = m_characterGenerator;
-
-        m_staticPlatformSpeed = m_platformSpeed;
-        m_staticTrashMisDamage = m_trashMissDamage;
-        m_staticDisposeFailDamage = m_disposeFailDamage;
     }
 
 

@@ -70,7 +70,7 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     private void OnTrashMissedEvent(TrashMissedEvent e) =>
-        Damage(GlobalGameSettings.trashMissDamage);
+        Damage(GlobalGameSettings.Instance.trashMissDamage);
 
 
 

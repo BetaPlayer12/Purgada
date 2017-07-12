@@ -11,7 +11,7 @@ public class BeginBackground : MonoBehaviour {
     {
         m_referenceResolutionX = 0;
         m_hasRaisedEvent = false;
-        m_enableCall = GlobalGameSettings.enablePlatformGenerator;
+        m_enableCall = GlobalGameSettings.Instance.enablePlatformGenerator;
     }
 
     void Update()

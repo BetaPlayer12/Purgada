@@ -24,7 +24,7 @@ public class ConstantMovement : MonoBehaviour {
     {
         if (!m_manualOverride)
         {
-            m_move = Vector3.left * GlobalGameSettings.platformSpeed;
+            m_move = Vector3.left * GlobalGameSettings.Instance.platformSpeed;
         }
     }
 

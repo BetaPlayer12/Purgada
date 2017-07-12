@@ -13,7 +13,7 @@ public class Obstacle_Generator : MonoBehaviour
     {
         var levelConstructor = LevelConstructor.Instance;
         var bounds = m_spawnArea.bounds.extents.x;
-        if (GlobalGameSettings.enableObstacleGenerator)
+        if (GlobalGameSettings.Instance.enableObstacleGenerator)
         {
 
             for (int i = 0; i < m_number; i++)

@@ -52,6 +52,13 @@ public class Grabber : Tool {
         m_isJammed = false;
     }
 
+    private IEnumerator LockInputTimer()
+    {
+        m_lockInput = true;
+        yield return new WaitForSeconds(0.5f);
+        m_lockInput = false;
+    }
+
     private void OnJamStart()
     {
         Debug.Log("Grabber Jams");
@@ -84,14 +91,26 @@ public class Grabber : Tool {
         m_clawArm.Enable(false);
     }
 
+     
+
     public override void Activate()
     {
         if (m_lockInput)
             return;
 
         Debug.Log("Grabber Extend");
-        Extend();
-        m_lockInput = true;
+
+        if (m_toolState == State.Standby)
+        {
+            Extend();
+            StopAllCoroutines();
+            StartCoroutine(LockInputTimer());
+        }
+        else if(m_toolState == State.Extend)
+        {
+            Retract();
+            m_lockInput = true;
+        }
     }
 
     void Start()
@@ -113,6 +132,7 @@ public class Grabber : Tool {
                 if (Vector3.Distance(Vector3.zero, m_clawArmTransform.localPosition) > m_maxRange)
                 {
                     Retract();
+                    m_lockInput = true;
                 }
                 break;
             case State.Retract:

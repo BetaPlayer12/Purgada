@@ -66,7 +66,7 @@ public class ConfirmationWindow : MonoBehaviour {
         }
         else
         {
-            ConfirmationResponse(ConfirmationWindowMessage.Response.Confirm);
+            ConfirmationResponse(ConfirmationWindowMessage.Response.Cancel);
             ConfirmationResponse = null;
         }
 

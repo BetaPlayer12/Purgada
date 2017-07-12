@@ -49,24 +49,27 @@ public class TokenPurchase : IConfirmationHandler
 
     protected override void OnAffirmResponse()
     {
-        GameManager.Instance.GetSystem<PlayerProfile>().AddToken(m_tokenType);
+        var playerProfile = GameManager.Instance.GetSystem<PlayerProfile>();
+        playerProfile.AddToken(m_tokenType);
+        playerProfile.GetComponent<PlayerMoney>().DeductMoney(m_cost);
+        m_purhcaseButton.SoldOut();
     }
 
     protected override void OnDeclineResponse()
     {
-       
+        Debug.Log("Cancelled");
     }
 
-    private void Awake()
+    protected override void OnStartModule()
     {
         m_purhcaseButton = GetComponent<PurchaseButton>();
-        
+        m_purhcaseButton.SetCost(m_cost);
     }
 
     private void OnEnable()
     {
-        var playerProfile = GameManager.Instance.GetComponent<PlayerProfile>();
-        m_isPurchased = GameManager.Instance.GetComponent<PlayerProfile>().isTokenOwned(m_tokenType);
+        var playerProfile = GameManager.Instance.GetSystem<PlayerProfile>();
+        m_isPurchased = playerProfile.isTokenOwned(m_tokenType);
         m_playerMoney = playerProfile.GetComponent<PlayerMoney>();
     }
 
@@ -79,5 +82,10 @@ public class TokenPurchase : IConfirmationHandler
                 m_purhcaseButton.MakeNonInteractable();
             }
         }
+        else
+        {
+            m_purhcaseButton.SoldOut();
+        }
+       
     }
 }
