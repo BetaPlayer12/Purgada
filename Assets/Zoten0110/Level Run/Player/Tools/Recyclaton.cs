@@ -16,16 +16,28 @@ public class Recyclaton : Tool
     private Collider2D m_collider;
 
     private bool m_activated;
+    [SerializeField]
+    private Animator m_animator;
+
+    [SerializeField]
+    private ParticleSystem m_suctionFX;
+    [SerializeField]
+    private Vector3 m_offset;
 
     protected void OnSuccesfulDisposal()
     {
         Debug.Log("Recyclaton Disposed Trash");
-        LevelRunMoneyHandler.Instance.GiveMoney();
+        var levelRunMoneyHandler = LevelRunMoneyHandler.Instance;
+        levelRunMoneyHandler.GiveMoney();
+        levelRunMoneyHandler.ShowMoney(true, Camera.main.WorldToScreenPoint(transform.position + m_offset));
     }
 
     protected void OnFailedDisposal()
     {
         Debug.Log("Recyclaton Fails");
+        var levelRunMoneyHandler = LevelRunMoneyHandler.Instance;
+        levelRunMoneyHandler.DeductMoney();
+        levelRunMoneyHandler.ShowMoney(false, Camera.main.WorldToScreenPoint(transform.position + m_offset));
     }
 
     public override void Activate()
@@ -52,6 +64,7 @@ public class Recyclaton : Tool
             {
                 m_range.forceMagnitude = -m_maxForce;
             }
+            m_suctionFX.gameObject.SetActive(true);
         }
         else
         {
@@ -63,8 +76,17 @@ public class Recyclaton : Tool
                 m_range.forceMagnitude = 0;
 
             }
+            m_suctionFX.gameObject.SetActive(false);
         }
-        m_activated = false;
+
+
+        if(!CustomInput.Instance.isHeld(CustomInputType.MonoInput, "Shoot"))
+        {
+            m_activated = false;
+        }
+
+        m_animator.SetBool("Recyclaton Active", m_activated);
+       
     }
 
     void OnTriggerEnter2D(Collider2D other)

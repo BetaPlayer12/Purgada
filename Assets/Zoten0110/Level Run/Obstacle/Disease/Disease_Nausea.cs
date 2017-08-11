@@ -22,6 +22,7 @@ public class Disease_Nausea : IDisease
     protected override void DiseaseStart()
     {
         m_jitter.Jitter(true);
+        TimerFactory.Instance.Create("Nausea", m_duration);
     }
 
     void Start()

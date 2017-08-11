@@ -22,7 +22,19 @@ public class TimerFactory : Singleton<TimerFactory> {
 
     public void Create(string timerName, float duration)
     {
+        Debug.Log("Creating " + timerName);
+        if (transform.childCount > 0)
+        {
+            var child = transform.Find(timerName);
+            if (child)
+            {
+                child.GetComponent<Timer>().SetTimer(duration);
+                return;
+            }
+        }
+
         var timer = Instantiate(m_timerPrefab) as GameObject;
+        timer.name = timerName;
         timer.transform.parent = transform;
         timer.transform.localScale = Vector3.one;
         var icon = m_iconDatabase.GetEntry(timerName).sprite;
@@ -53,7 +65,7 @@ public class TimerFactory : Singleton<TimerFactory> {
 
         for (int i = 0; i < m_timerList.Count; i++)
         {
-           if(i % m_maxColumn == 0)
+           if(i % m_maxColumn == 0 && m_maxColumn != 1)
             {
                 YSpacingFactor++;
                 m_currentX = 0f;

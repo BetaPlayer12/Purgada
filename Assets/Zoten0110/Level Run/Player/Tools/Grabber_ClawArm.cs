@@ -6,8 +6,17 @@ public class Grabber_ClawArm : MonoBehaviour
 {
     [SerializeField]
     private Grabber m_grabber;
+    [SerializeField]
     private Collider2D m_collider;
     private Trash m_trash;
+
+    [SerializeField]
+    private SpriteRenderer m_renderer;
+    [SerializeField]
+    private Sprite m_spriteMain;
+    [SerializeField]
+    private Sprite m_spriteOverride;
+
 
     public Trash heldTrash { get { return m_trash; } }
     public bool isEmptyHanded { get { return m_trash == null; } }
@@ -17,10 +26,11 @@ public class Grabber_ClawArm : MonoBehaviour
         m_collider.enabled = value;
     }
 
-    void Start()
+    public void OverrideSprite()
     {
-        m_collider = GetComponent<Collider2D>();
+        m_renderer.sprite = m_spriteMain;
     }
+
 
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -33,6 +43,7 @@ public class Grabber_ClawArm : MonoBehaviour
         if (other.tag != "Sensors")
         {
             Debug.Log("Grabber Hits " + other.gameObject.name);
+            m_renderer.sprite = m_spriteOverride;
             m_grabber.Retract();
             Debug.Log(other.gameObject.layer + " " + LayerMask.NameToLayer("Trash"));
             if (other.gameObject.layer == LayerMask.NameToLayer("Trash"))

@@ -35,5 +35,11 @@ public abstract class IDisease : MonoBehaviour
         {
             StartCoroutine(DiseaseEffect());
         }
+        else
+        {
+            StopAllCoroutines();
+            StartCoroutine(DiseaseEffect());
+        }
+
     }
 }

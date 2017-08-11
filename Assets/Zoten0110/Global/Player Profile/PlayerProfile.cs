@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public struct PlayerInfo
+{
+    public int currentMoney;
+    public int[] ownedTokens;
+    public int quiExurgaLevel;
+    public int droceoDroneLevel;
+    public int orbRepairLevel;
+}
+
 public class PlayerProfile : ISystem {
 
     [System.Serializable]
@@ -29,6 +38,15 @@ public class PlayerProfile : ISystem {
             m_level += 1;
         }
 
+        public void Set(int level)
+        {
+            m_level = (PowerupLevel)level;
+        }
+
+        public void Set(PowerupLevel level)
+        {
+            m_level = level;
+        }
     }
 
     [SerializeField]
@@ -112,6 +130,65 @@ public class PlayerProfile : ISystem {
         return false;
     }
 
+    public PlayerInfo Save()
+    {
+        PlayerInfo newSave = new PlayerInfo();
+
+        newSave.currentMoney = m_playerMoney.currentMoney;
+        newSave.ownedTokens = new int[(int)TokenTypes._Count];
+
+        //Enum to int
+        {
+            for (int i = 0; i < newSave.ownedTokens.Length; i++)
+            {
+                newSave.ownedTokens[i] = 0; // False
+            }
+
+            for (int i = 0; i < m_ownedTokens.Count; i++)
+            {
+                newSave.ownedTokens[(int)m_ownedTokens[i]] = 1; // True
+            }
+        }
+
+        newSave.quiExurgaLevel = (int)m_quiExurgaData.level;
+        newSave.droceoDroneLevel = (int)m_droceoDroneData.level;
+        newSave.orbRepairLevel = (int)m_orbRepairData.level;
+
+        return newSave;
+    }
+
+    public void Load(PlayerInfo newInfo)
+    {
+        m_playerMoney.SetMoney(newInfo.currentMoney);
+
+        if (m_ownedTokens == null)
+        {
+            m_ownedTokens = new List<TokenTypes>();
+        }
+
+        for (int i = 0; i < newInfo.ownedTokens.Length; i++)
+        {
+            if(newInfo.ownedTokens[i] == 1)
+            {
+                m_ownedTokens.Add((TokenTypes)i);
+            }
+        }
+
+        m_quiExurgaData.Set(newInfo.quiExurgaLevel);
+        m_droceoDroneData.Set(newInfo.droceoDroneLevel);
+        m_orbRepairData.Set(newInfo.orbRepairLevel);
+    }
+
     public PlayerMoney playerMoney { get { return m_playerMoney; } }
 
+
+    private void OnEnable()
+    {
+        this.RaiseSystemEventGlobal<LoadProfileEvent>(new LoadProfileEvent());
+    }
+
+    private void OnDisable()
+    {
+        this.RaiseSystemEventGlobal<SaveProfileEvent>(new SaveProfileEvent());
+    }
 }

@@ -68,6 +68,7 @@ public class Disease_Respiratory : IDisease
     protected override void DiseaseStart()
     {
         StartCoroutine(BlurEffect());
+        TimerFactory.Instance.Create("Respiratory", m_duration);
     }
 
 

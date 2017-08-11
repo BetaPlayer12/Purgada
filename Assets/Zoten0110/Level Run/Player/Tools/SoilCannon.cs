@@ -14,6 +14,8 @@ public class SoilCannon : Tool {
     [SerializeField]
     private float m_force;
 
+    [SerializeField]
+    private Animator m_animator;
     private float m_timeInterval; //calculation derived from fireRate
 
     private IEnumerator CoolDown()
@@ -22,7 +24,7 @@ public class SoilCannon : Tool {
         m_lockInput = false;
     }
 
-    private void CreateProjectile()
+    public void CreateProjectile()
     {
         var projectile = Instantiate(m_projectile, m_barrelEnd.position, transform.parent.rotation) as GameObject;
         projectile.GetComponent<Rigidbody2D>().AddForce(projectile.transform.right * m_force, ForceMode2D.Impulse);
@@ -32,6 +34,7 @@ public class SoilCannon : Tool {
     {
         Debug.Log("SoilCannon Shot");
         m_lockInput = true;
+        m_animator.SetTrigger("Soil Canon Fire");
         CreateProjectile();
         StartCoroutine(CoolDown());
     }

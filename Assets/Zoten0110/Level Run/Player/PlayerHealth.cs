@@ -69,10 +69,17 @@ public class PlayerHealth : MonoBehaviour {
         }
     }
 
+
+
     private void OnTrashMissedEvent(TrashMissedEvent e) =>
         Damage(GlobalGameSettings.Instance.trashMissDamage);
 
 
+    private void OnPlayerStatusReqestEvent(PlayerStatusReqestEvent e)
+    {
+        e.isInvulnerable = m_invulnerable;
+        e.isDead = m_dead;
+    }
 
     // Use this for initialization
     void Start ()
@@ -84,12 +91,14 @@ public class PlayerHealth : MonoBehaviour {
     void OnEnable()
     {
         this.AddGameEventListenerGlobal<TrashMissedEvent>(OnTrashMissedEvent);
+        this.AddGameEventListenerGlobal<PlayerStatusReqestEvent>(OnPlayerStatusReqestEvent);
        
     }
 
     void OnDisable()
     {
         this.RemoveGameEventListenerGlobal<TrashMissedEvent>(OnTrashMissedEvent);
+        this.RemoveGameEventListenerGlobal<PlayerStatusReqestEvent>(OnPlayerStatusReqestEvent);
 
     }
 }

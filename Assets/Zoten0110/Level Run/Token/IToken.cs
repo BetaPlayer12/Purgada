@@ -6,7 +6,8 @@ public enum TokenTypes
 {
     Miracle_Drug,
     Sponsorship,
-    Booster_Shot
+    Booster_Shot,
+    _Count
 }
 
 public abstract class IToken : MonoBehaviour

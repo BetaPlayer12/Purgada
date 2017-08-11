@@ -10,7 +10,7 @@ public abstract class Tool : MonoBehaviour
     protected bool m_lockInput;
 
 
-    private bool AllClear()=>
+    protected virtual bool AllClear()=>
        !m_lockInput;
 
     public void Shoot()

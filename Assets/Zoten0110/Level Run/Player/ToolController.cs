@@ -18,6 +18,9 @@ public class ToolController : MonoBehaviour, DebugObject {
     private Tool[] m_tools;
     private int m_toolIndex;
 
+    [SerializeField]
+    private Animator m_animator;
+
     private bool m_enableInput;
 
     private bool isShooting { get { return CustomInput.Instance.isHeld(CustomInputType.MonoInput,"Shoot"); } }
@@ -30,6 +33,7 @@ public class ToolController : MonoBehaviour, DebugObject {
             m_toolIndex += CustomInput.Instance.GetTapValue(CustomInputType.BinaryInput,"Swap Tools");
             m_toolIndex = m_toolIndex.RotateIndex(0, m_tools.Length);
             m_tools[m_toolIndex].Select();
+            m_animator.SetInteger("Tool Index", m_toolIndex);
         }
     }
 

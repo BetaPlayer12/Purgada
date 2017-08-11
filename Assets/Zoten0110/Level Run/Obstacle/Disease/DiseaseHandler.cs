@@ -14,6 +14,16 @@ public class InflictDiseaseToPlayerEvent : GameEvent
     }
 }
 
+public class PlayerStatusReqestEvent : GameEvent
+{
+    public bool isInvulnerable;
+    public bool isDead;
+
+    public PlayerStatusReqestEvent(GameObject sender) : base(sender)
+    {
+    }
+}
+
 public enum DiseaseType
 {
     Nausea,
@@ -32,20 +42,26 @@ public class DiseaseHandler : MonoBehaviour {
 
     private void OnInflictDiseaseToPlayerEvent(InflictDiseaseToPlayerEvent e)
     {
-        switch (e.diseaseType)
-        {
-            case DiseaseType.Nausea:
-                m_nausea.Inflict();
-                break;
-            case DiseaseType.Repiratory:
-                m_respiratory.Inflict();
-                break;
-            case DiseaseType.Tetanus:
-                m_tetanus.Inflict();
-                break;
-        }
+        PlayerStatusReqestEvent playerStat = new PlayerStatusReqestEvent(gameObject);
+        this.RaiseGameEventGlobal(playerStat);
 
-        Debug.Log($"{e.diseaseType} is Inflicted");
+        if (playerStat.isInvulnerable == false)
+        {
+            switch (e.diseaseType)
+            {
+                case DiseaseType.Nausea:
+                    m_nausea.Inflict();
+                    break;
+                case DiseaseType.Repiratory:
+                    m_respiratory.Inflict();
+                    break;
+                case DiseaseType.Tetanus:
+                    m_tetanus.Inflict();
+                    break;
+            }
+
+            Debug.Log($"{e.diseaseType} is Inflicted");
+        }
     }
 
     void OnEnable()

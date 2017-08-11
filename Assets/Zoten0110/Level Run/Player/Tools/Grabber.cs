@@ -17,14 +17,26 @@ public class Grabber : Tool {
     [SerializeField]
     private float m_maxRange;
     [SerializeField]
-    private float m_speed;
+    private float m_extendSpeed;
+    [SerializeField]
+    private float m_retractSpeed;
     private State m_toolState;
 
     private bool m_isJammed;
     [SerializeField]
     private float m_jammedTime;
+    [SerializeField]
+    private bool m_canSwitch;
+
+    [Header("Visual Settings")]
+    [SerializeField]
+    private LineRenderer m_lineRenderer;
+    [SerializeField]
+    private ParticleSystem m_jamFX;
 
     private Transform m_clawArmTransform;
+
+
 
     private void Dispose()
     {
@@ -62,11 +74,18 @@ public class Grabber : Tool {
     private void OnJamStart()
     {
         Debug.Log("Grabber Jams");
+        m_jamFX.gameObject.SetActive(true);
     }
 
     private void OnJamEnd()
     {
         Debug.Log("Grabber Operational");
+        m_jamFX.gameObject.SetActive(false);
+    }
+
+    protected override bool AllClear()
+    {
+        return base.AllClear() && m_canSwitch;
     }
 
     protected void OnSuccesfulDisposal()
@@ -76,11 +95,14 @@ public class Grabber : Tool {
 
     protected void OnFailedDisposal()
     {
+        StopAllCoroutines();
+        TimerFactory.Instance.Create("Grabber Jam", m_jammedTime);
         StartCoroutine(JamCountDown());
     }
 
     public void Extend()
     {
+        m_canSwitch = false;
         m_toolState = State.Extend;
         m_clawArm.Enable(true);
     }
@@ -95,7 +117,7 @@ public class Grabber : Tool {
 
     public override void Activate()
     {
-        if (m_lockInput)
+        if (m_lockInput || m_isJammed)
             return;
 
         Debug.Log("Grabber Extend");
@@ -118,6 +140,8 @@ public class Grabber : Tool {
         m_clawArmTransform = m_clawArm.transform;
         m_clawArm.Enable(false);
         m_toolState = State.Standby;
+        m_lineRenderer.positionCount = 2;
+        m_canSwitch = true;
     }
 
 	// Update is called once per frame
@@ -127,7 +151,7 @@ public class Grabber : Tool {
         {
             case State.Extend:
 
-                m_clawArmTransform.localPosition += Vector3.right * m_speed * Time.deltaTime;
+                m_clawArmTransform.localPosition += Vector3.right * m_extendSpeed * Time.deltaTime;
 
                 if (Vector3.Distance(Vector3.zero, m_clawArmTransform.localPosition) > m_maxRange)
                 {
@@ -136,17 +160,22 @@ public class Grabber : Tool {
                 }
                 break;
             case State.Retract:
-                m_clawArmTransform.localPosition += Vector3.left * m_speed * Time.deltaTime;
+                m_clawArmTransform.localPosition += Vector3.left * m_retractSpeed * Time.deltaTime;
                 if(m_clawArmTransform.localPosition.x < 0.1f)
                 {
                     m_clawArmTransform.localPosition = Vector3.zero;
                     m_toolState = State.Standby;
                     m_lockInput = false;
+                    m_canSwitch = true;
                     Dispose();
                 }
                 break;
         }
-	}
+
+        m_lineRenderer.SetPosition(0, transform.position);
+        m_lineRenderer.SetPosition(1, m_clawArmTransform.position);
+
+    }
 
 
 }
