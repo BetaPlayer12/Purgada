@@ -10,7 +10,9 @@ public class PlatformDatabase_Editor : IDatabase_Editor
 
     protected override void DisplayAdditionalFoldoutDetails(SerializedProperty entryProp)
     {
-        DisplayTexture("Platform: ", m_overridePlatformProp, true);
+        var entryPlatformProp = entryProp.FindPropertyRelative("m_platform");
+
+        DisplayTexture("Platform: ", entryPlatformProp, true);
     }
 
     protected override void DisplayEditableFoldout()

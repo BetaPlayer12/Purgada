@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class OrbRepair : IPowerup
 {
+
     [SerializeField]
     private OrbRepair_Creature m_creature;
-    private bool m_hasDesignatedTarget; 
-    private List<Obstacle> m_obstacleList = new List<Obstacle>();
+    //private bool m_hasDesignatedTarget; 
+    //private List<Obstacle> m_obstacleList = new List<Obstacle>();
 
-    public Rigidbody2D m_rig;
+    //public Rigidbody2D m_rig;
 
     public override Type type
     {
@@ -22,51 +23,72 @@ public class OrbRepair : IPowerup
 
     protected override void PowerupFunction()
     {
-        if (m_creature.hasTarget)
-        {
-            m_hasDesignatedTarget = true;
-        }
-        else
-        {
-            if (m_hasDesignatedTarget)
-            {
-                m_hasDesignatedTarget = false;
-                RemoveNullOnList();
-            }
-            if (m_obstacleList.Count != 0)
-            {
-                if (m_obstacleList[0] != null)
-                {
-                    m_hasDesignatedTarget = true;
-                    m_creature.SetTarget(m_obstacleList[0]);
-                }
-            }
-        }
+       
     }
 
-    private void RemoveNullOnList()
-    {
-        for (int i = m_obstacleList.Count-1; i >= 0; i--)
-        {
-           if( m_obstacleList[i] == null){
-                m_obstacleList.RemoveAt(i);
-            }
-        }
-    }
+    //protected override void PowerupFunction()
+    //{
+    //    if (m_creature.hasTarget)
+    //    {
+    //        m_hasDesignatedTarget = true;
+    //    }
+    //    else
+    //    {
+    //        if (m_hasDesignatedTarget)
+    //        {
+    //            m_hasDesignatedTarget = false;
+    //            RemoveNullOnList();
+    //        }
+    //        if (m_obstacleList.Count != 0)
+    //        {
+    //            if (m_obstacleList[0] != null)
+    //            {
+    //                m_hasDesignatedTarget = true;
+    //                m_creature.SetTarget(m_obstacleList[0]);
+    //            }
+    //        }
+    //    }
+    //}
+
+    //private void RemoveNullOnList()
+    //{
+    //    for (int i = m_obstacleList.Count-1; i >= 0; i--)
+    //    {
+    //       if( m_obstacleList[i] == null){
+    //            m_obstacleList.RemoveAt(i);
+    //        }
+    //    }
+    //}
 
 
-    private void Update()
+    //private void Update()
+    //{
+    //    PowerupFunction();
+    //}
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Sensor Caught");
+    //    var obstacle = collision.GetComponent<Obstacle>();
+    //    if (obstacle)
+    //    {
+    //        m_obstacleList.Add(obstacle);
+    //    }
+    //}
+    private void Start()
     {
-        PowerupFunction();
+        UpdateInfo();
+        TimerFactory.Instance.Create("OrbRepair", m_duration);
+        StartCoroutine(DelayDestroy());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Sensor Caught");
-        var obstacle = collision.GetComponent<Obstacle>();
+        var obstacle = collision.GetComponentInParent<Obstacle>();
         if (obstacle)
         {
-            m_obstacleList.Add(obstacle);
+            m_creature.Spawn(obstacle);
         }
     }
 

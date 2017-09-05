@@ -13,9 +13,16 @@ public abstract class IPowerup : MonoBehaviour {
 
     [SerializeField]
     protected GameObject m_parentObject;
-    private float m_duration;
+    [SerializeField]
+    private bool m_justDisable;
+    protected float m_duration;
 
     public abstract Type type { get; }
+
+    protected virtual void Death()
+    {
+
+    }
 
     public void UpdateInfo()
     {
@@ -34,7 +41,15 @@ public abstract class IPowerup : MonoBehaviour {
     protected IEnumerator DelayDestroy()
     {
         yield return new WaitForSeconds(m_duration);
-        Destroy(m_parentObject);
+        Death();
+        if (m_justDisable)
+        {
+            m_parentObject.SetActive(false);
+        }
+        else
+        {
+            Destroy(m_parentObject);
+        }
     }
 
     private void OnLevelStartEvent(LevelStartEvent e)

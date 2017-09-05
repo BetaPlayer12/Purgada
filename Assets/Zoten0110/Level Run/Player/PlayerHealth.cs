@@ -38,6 +38,21 @@ public class PlayerHealth : MonoBehaviour {
     public void BecomeInvulnerable(bool value) =>
         m_invulnerable = value;
 
+    public void BecomeTemporilyInvulnerable(float duration)
+    {
+        StopAllCoroutines();
+        StartCoroutine(TemporaryInvulnerable(duration));
+    }
+
+    private IEnumerator TemporaryInvulnerable(float duration)
+    {
+        BecomeInvulnerable(true);
+        yield return new WaitForSeconds(duration);
+        BecomeInvulnerable(false);
+    }
+
+    
+
     public void SetDamageReduction(float damageReduction)
     {
         m_damageReduction = damageReduction;

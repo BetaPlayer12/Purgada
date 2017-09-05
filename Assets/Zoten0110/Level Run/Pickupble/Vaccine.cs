@@ -12,8 +12,17 @@ public class OnVaccineEffectEvent : GameEvent
 
 public class Vaccine : IPickup {
 
+    [SerializeField]
+    private float m_duration;
+
     protected override void OnPickup(GameObject GO)
     {
-        throw new NotImplementedException();
+        var playerHealth = GO.GetComponent<PlayerHealth>();
+        if (playerHealth)
+        {
+            playerHealth.BecomeTemporilyInvulnerable(m_duration);
+            this.RaiseGameEventGlobal<ShowCommentEvent>(new ShowCommentEvent(gameObject, "You feel Invulnerable"));
+            TimerFactory.Instance.Create("Vaccine", m_duration);
+        }
     }
 }

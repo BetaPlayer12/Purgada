@@ -14,6 +14,7 @@ public class Capsule : IPickup
         if (playerHealth)
         {
             playerHealth.Heal(m_healValue);
+            this.RaiseGameEventGlobal<ShowCommentEvent>(new ShowCommentEvent(gameObject, "You feel better"));
         }
     }
 }

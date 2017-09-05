@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup_Generator : MonoBehaviour {
+public class Pickup_Generator : MonoBehaviour
+{
 
     [System.Serializable]
     public class PickupInfo
@@ -17,30 +18,35 @@ public class Pickup_Generator : MonoBehaviour {
         public GameObject pickup { get { return m_pickup; } }
     }
 
-    public Collider2D m_spawnArea;
-
-    public PickupInfo[] m_encounterList;
+    public Collider2D[] m_spawnArea;
 
     // Use this for initialization
     void Start()
     {
-        for (int i = 0; i < m_encounterList.Length; i++)
+        var pickup = LevelConstructor.Instance.GetPickup();
+
+        if (pickup)
         {
-            var willInstansiate = m_encounterList[i].instanceRate >= Random.Range(0, 100);
-
-            if (willInstansiate)
+            for (int x = 0; x < m_spawnArea.Length; x++)
             {
-                var encounter = m_encounterList[i].pickup;
-                var bounds = m_spawnArea.bounds.extents.x;
+                var willInstansiateHere = 100f >= Random.Range(0, 100);
 
-                var instance = Instantiate(encounter) as GameObject;
-                instance.transform.parent = transform;
-                var collider = instance.GetComponentInChildren<Collider2D>();
+                if (willInstansiateHere)
+                {
+                    var bounds = m_spawnArea[x].bounds.extents.x;
 
-                var position = m_spawnArea.transform.position.x + Random.Range(-bounds, bounds);
-                instance.transform.position = new Vector3(position, 1.4f, 0f);
-                instance.transform.localPosition = new Vector3(instance.transform.localPosition.x, 1.4f, 0f);
+                    var instance = Instantiate(pickup) as GameObject;
+                    instance.transform.parent = m_spawnArea[x].transform;
+                    var collider = instance.GetComponentInChildren<Collider2D>();
+
+                    var position = m_spawnArea[x].transform.position.x + Random.Range(-bounds, bounds);
+                    instance.transform.position = new Vector3(position, 1.4f, 0f);
+                    instance.transform.localPosition = new Vector3(instance.transform.localPosition.x, 1.4f, 0f);
+                    break;
+                }
             }
+
         }
+
     }
 }

@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grabber : Tool {
+public class Grabber : Tool
+{
 
     private enum State
     {
@@ -33,6 +34,10 @@ public class Grabber : Tool {
     private LineRenderer m_lineRenderer;
     [SerializeField]
     private ParticleSystem m_jamFX;
+    [SerializeField]
+    private GameObject m_trashBag;
+    [SerializeField]
+    private Transform m_platformSpawn;
 
     private Transform m_clawArmTransform;
 
@@ -46,6 +51,10 @@ public class Grabber : Tool {
         if (m_clawArm.heldTrash.trashType == Trash.Type.Toxic)
         {
             OnSuccesfulDisposal();
+            var trashBag = Instantiate(m_trashBag) as GameObject;
+            trashBag.transform.position = m_clawArm.heldTrash.transform.position;
+            trashBag.transform.parent = m_platformSpawn.GetChild(0);
+            trashBag.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -15), ForceMode2D.Impulse);
         }
         else
         {
@@ -91,6 +100,8 @@ public class Grabber : Tool {
     protected void OnSuccesfulDisposal()
     {
         Debug.Log("Grabber Disposed Trash");
+
+
     }
 
     protected void OnFailedDisposal()
@@ -113,7 +124,7 @@ public class Grabber : Tool {
         m_clawArm.Enable(false);
     }
 
-     
+
 
     public override void Activate()
     {
@@ -128,7 +139,7 @@ public class Grabber : Tool {
             StopAllCoroutines();
             StartCoroutine(LockInputTimer());
         }
-        else if(m_toolState == State.Extend)
+        else if (m_toolState == State.Extend)
         {
             Retract();
             m_lockInput = true;
@@ -144,8 +155,8 @@ public class Grabber : Tool {
         m_canSwitch = true;
     }
 
-	// Update is called once per frame
-	void FixedUpdate ()
+    // Update is called once per frame
+    void FixedUpdate()
     {
         switch (m_toolState)
         {
@@ -161,7 +172,7 @@ public class Grabber : Tool {
                 break;
             case State.Retract:
                 m_clawArmTransform.localPosition += Vector3.left * m_retractSpeed * Time.deltaTime;
-                if(m_clawArmTransform.localPosition.x < 0.1f)
+                if (m_clawArmTransform.localPosition.x < 0.1f)
                 {
                     m_clawArmTransform.localPosition = Vector3.zero;
                     m_toolState = State.Standby;

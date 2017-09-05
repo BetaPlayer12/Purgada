@@ -36,11 +36,11 @@ public class Trash : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        var screenPosition = Camera.main.WorldToScreenPoint(transform.position);
-        if (screenPosition.x <= -50)
-        {
-            this.RaiseGameEventGlobal(new TrashMissedEvent(gameObject));
-            Destroy(gameObject);
-        }
+        ////var screenPosition = Camera.main.WorldToScreenPoint(transform.position);
+        //if (screenPosition.x <= -50)
+        //{
+        //    this.RaiseGameEventGlobal(new TrashMissedEvent(gameObject));
+        //    Destroy(gameObject);
+        //}
     }
 }

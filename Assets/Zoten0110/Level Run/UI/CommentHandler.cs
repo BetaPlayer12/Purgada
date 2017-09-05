@@ -3,6 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+public class ShowCommentEvent : GameEvent
+{
+    public string comment;
+
+    public ShowCommentEvent(GameObject sender, string comment) : base(sender)
+    {
+        this.sender = sender;
+        this.comment = comment;
+    }
+}
+
 public class CommentHandler : MonoBehaviour {
 
     [SerializeField]
@@ -42,13 +53,20 @@ public class CommentHandler : MonoBehaviour {
         }
     }
 
+    private void OnShowCommentEvent(ShowCommentEvent e)
+    {
+        Comment(e.comment);
+    }
+
     private void OnEnable()
     {
         this.AddGameEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
+        this.AddGameEventListenerGlobal<ShowCommentEvent>(OnShowCommentEvent);
     }
 
     private void OnDisable()
     {
         this.RemoveGameEventListenerGlobal<InflictDiseaseToPlayerEvent>(OnInflictDiseaseToPlayerEvent);
+        this.RemoveGameEventListenerGlobal<ShowCommentEvent>(OnShowCommentEvent);
     }
 }

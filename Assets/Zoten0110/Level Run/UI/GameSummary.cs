@@ -22,6 +22,7 @@ public class GameSummary : MonoBehaviour {
     void OnEnable()
     {
         this.AddGameEventListenerGlobal<PlayerDeathEvent>(OnPlayerDeathEvent);
+        GameManager.Instance.GetSystem<PlayerProfile>().ResetTokens();
     }
 
     void OnDisable()

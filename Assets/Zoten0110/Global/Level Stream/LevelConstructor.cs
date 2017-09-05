@@ -87,6 +87,70 @@ public class LevelConstructor : Singleton<LevelConstructor>
     private Queue<GameObject> m_trashQueue;
     private Queue<GameObject> m_obstacleQueue;
 
+    [Header("Trash Settings")]
+    [SerializeField][Range(0,100)]
+    private int m_trashSpawnPercentage; //Percent of If trash will spawn
+    [SerializeField]
+    private int m_minTrashCount;
+    [SerializeField]
+    private int m_maxTrashCount; 
+
+    [Space]
+    [Header("Obstacle Settings")]
+    [SerializeField][Range(0,100)]
+    private int m_obstacleSpawnPercentage; //Percent of If obstacle will spawn
+    [SerializeField]
+    private int m_minObstacleCount; 
+    [SerializeField]
+    private int m_maxObstacleCount; 
+
+    [Space]
+    [Header("encounter Settings")]
+    [SerializeField]
+    [Range(0, 100)]
+    private int m_encounterSpawnPercentage; //Percent of If an encounter will spawn
+    [SerializeField]
+    private ObjectDropRate m_encounterSpawnInfo;
+
+    [Space]
+    [Header("powerup Settings")]
+    [SerializeField]
+    [Range(0, 100)]
+    private int m_powerupSpawnPercentage; //Percent of If powerups will spawn
+    [SerializeField]
+    private ObjectDropRate m_powerupDropInfo;
+
+
+    [Space]
+    [Header("pickup Settings")]
+    [SerializeField]
+    [Range(0, 100)]
+    private int m_pickupSpawnPecentage; //Percent of If pickup will spawn
+    [SerializeField]
+    private ObjectDropRate m_pickupDropInfo;
+
+
+    public int GetTrashSpawnCount()
+    {
+        if(m_trashSpawnPercentage > Random.Range(0, 100))
+        {
+            return Random.Range(m_minTrashCount, m_maxTrashCount);
+        }
+
+        return 0;
+    }
+
+
+    public int GetObstacleSpawnCount()
+    {
+        if (m_obstacleSpawnPercentage> Random.Range(0, 100))
+        {
+            return Random.Range(m_minObstacleCount, m_maxObstacleCount);
+        }
+
+        return 0;
+    }
+
 
     public GameObject GetPlatform()
     {
@@ -97,6 +161,7 @@ public class LevelConstructor : Singleton<LevelConstructor>
     private void EnqueuePlatform()
     {
         var index = Random.Range(0, databaseSystem.GetSize<PlatformDatabase>());
+        Debug.Log("Queued platform index +" + index.ToString());
         m_platformQueue.Enqueue(databaseSystem.GetEntryOf<PlatformDatabase.PlatformEntry>(index).platform);
     }
 
@@ -116,6 +181,36 @@ public class LevelConstructor : Singleton<LevelConstructor>
     {
         EnqueueObstsacle();
         return m_obstacleQueue.Dequeue();
+    }
+
+    public GameObject GetEncounter()
+    {
+        if (Random.Range(0, 100) <= m_encounterSpawnPercentage)
+        {
+            return m_encounterSpawnInfo.GetInstanceObject();
+        }
+
+        return null;
+    }
+
+    public GameObject GetPickup()
+    {
+        if(Random.Range(0,100) <= m_pickupSpawnPecentage)
+        {
+           return  m_pickupDropInfo.GetInstanceObject();
+        }
+
+        return null;
+    }
+
+    public GameObject GetPowerup()
+    {
+        if (Random.Range(0, 100) <= m_powerupSpawnPercentage)
+        {
+            return m_powerupDropInfo.GetInstanceObject();
+        }
+
+        return null;
     }
 
     private void EnqueueObstsacle()

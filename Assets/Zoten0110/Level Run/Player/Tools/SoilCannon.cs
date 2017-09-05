@@ -17,11 +17,12 @@ public class SoilCannon : Tool {
     [SerializeField]
     private Animator m_animator;
     private float m_timeInterval; //calculation derived from fireRate
+    private bool m_canFire = true;
 
     private IEnumerator CoolDown()
     {
         yield return new WaitForSecondsRealtime(m_timeInterval);
-        m_lockInput = false;
+        m_canFire = true;
     }
 
     public void CreateProjectile()
@@ -32,11 +33,15 @@ public class SoilCannon : Tool {
 
     public override void Activate()
     {
-        Debug.Log("SoilCannon Shot");
-        m_lockInput = true;
-        m_animator.SetTrigger("Soil Canon Fire");
-        CreateProjectile();
-        StartCoroutine(CoolDown());
+        if (m_canFire)
+        {
+            Debug.Log("SoilCannon Shot");
+            m_canFire = false;
+            //m_animator.SetTrigger("Soil Canon Fire");
+            m_animator.Play("Soil Canon Fire",0);
+            CreateProjectile();
+            StartCoroutine(CoolDown());
+        }
     }
 
     // Use this for initialization

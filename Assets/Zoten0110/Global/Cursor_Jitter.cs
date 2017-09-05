@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cursor_Jitter : MonoBehaviour {
+public class Cursor_Jitter : MonoBehaviour
+{
 
     private RectTransform m_rectTransform;
     [SerializeField]
@@ -13,8 +14,10 @@ public class Cursor_Jitter : MonoBehaviour {
     private bool m_istravelling;
     private bool m_isCentered;
 
+    private float m_prevDistance;
     private Vector3 m_jitterDestination;
     private Vector3 m_travelDirection;
+
 
     public void SetJitter(Vector2 jitterRange, float speed)
     {
@@ -32,26 +35,33 @@ public class Cursor_Jitter : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         if (m_isJittering)
         {
+            var distance = Vector3.Distance(m_rectTransform.localPosition, m_jitterDestination);
+
             if (m_istravelling)
             {
                 m_rectTransform.localPosition += m_travelDirection * m_speed * Time.deltaTime;
-                if (Vector3.Distance(m_rectTransform.localPosition, m_jitterDestination) <= 1f)
+
+
+                if (m_prevDistance - distance <= 1f)
                 {
                     m_istravelling = false;
                 }
             }
             else
             {
-                m_jitterDestination = new Vector3(Random.Range(-m_jitterRange.x, m_jitterRange.x),Random.Range(-m_jitterRange.y, m_jitterRange.y), 0);
+                m_jitterDestination = new Vector3(Random.Range(-m_jitterRange.x, m_jitterRange.x), Random.Range(-m_jitterRange.y, m_jitterRange.y), 0);
                 m_travelDirection = (m_jitterDestination - m_rectTransform.localPosition).normalized;
                 m_istravelling = true;
             }
+
+            m_prevDistance = distance;
             m_isCentered = false;
         }
-        else if(m_isCentered == false)
+        else if (m_isCentered == false)
         {
             m_istravelling = false;
             m_travelDirection = (Vector3.zero - m_rectTransform.localPosition).normalized;

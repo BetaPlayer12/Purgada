@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour, DebugObject
                 }
                 else
                 {
-                    m_rigidbody.AddForce(Vector3.up * m_jumpForce, ForceMode2D.Impulse);
+                    m_rigidbody.AddForce(Vector3.up * m_jumpForce * m_rigidbody.gravityScale *m_rigidbody.mass, ForceMode2D.Impulse);
                 }
                 m_isJumping = true;
             }

@@ -130,6 +130,11 @@ public class PlayerProfile : ISystem {
         return false;
     }
 
+    public void ResetTokens()
+    {
+        m_ownedTokens.Clear();
+    }
+
     public PlayerInfo Save()
     {
         PlayerInfo newSave = new PlayerInfo();
